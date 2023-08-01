@@ -1,5 +1,5 @@
 <template>
-	<div class="snowy-tags">
+	<div class="support-tags">
 		<xn-context-menu
 			class="right-menu"
 			:target="contextMenuTarget"
@@ -8,45 +8,45 @@
 			@get-context-menu="handleTabContextMenu"
 		>
 			<div class="right-menu-item" @click="refreshTab">
-				<reload-outlined class="snowy-header-tags-right" />
+				<reload-outlined class="support-header-tags-right" />
 				<div class="pl-3">刷新</div>
 			</div>
 
 			<div class="right-menu-item" @click="closeTabs">
-				<close-outlined class="snowy-header-tags-right" />
+				<close-outlined class="support-header-tags-right" />
 				<div class="pl-3">关闭</div>
 			</div>
 
 			<div class="right-menu-item" @click="closeOtherTabs">
-				<close-outlined class="snowy-header-tags-right" />
+				<close-outlined class="support-header-tags-right" />
 				<div class="pl-3">关闭其他标签</div>
 			</div>
 
 			<div class="right-menu-item" @click="maximize">
-				<expand-outlined class="snowy-header-tags-right" />
+				<expand-outlined class="support-header-tags-right" />
 				<div class="pl-3">最大化</div>
 			</div>
 			<div class="right-menu-item" @click="openWindow">
-				<select-outlined class="snowy-header-tags-right" />
+				<select-outlined class="support-header-tags-right" />
 				<div class="pl-3">新窗口打开</div>
 			</div>
 		</xn-context-menu>
 		<a-tabs
 			v-model:activeKey="activeKey"
 			type="editable-card"
-			class="snowy-admin-tabs"
+			class="support-admin-tabs"
 			hide-add
 			ref="tabs"
 			@edit="onTabRemove"
 			@tabClick="onTabClick"
 		>
 			<template #leftExtra>
-				<div class="snowy-admin-tabs-arrow" @click="scrollLeft">
+				<div class="support-admin-tabs-arrow" @click="scrollLeft">
 					<left-outlined />
 				</div>
 			</template>
 			<template #rightExtra>
-				<div class="snowy-admin-tabs-arrow" @click="scrollRight">
+				<div class="support-admin-tabs-arrow" @click="scrollRight">
 					<right-outlined />
 				</div>
 			</template>
@@ -280,7 +280,7 @@
 </script>
 
 <style lang="less">
-	.snowy-admin-tabs {
+	.support-admin-tabs {
 		&.ant-tabs {
 			background: var(--component-background);
 			box-shadow: var(--header-light-shadow);
@@ -317,8 +317,8 @@
 				}
 			}
 
-			.snowy-admin-tabs-drop,
-			.snowy-admin-tabs-arrow,
+			.support-admin-tabs-drop,
+			.support-admin-tabs-arrow,
 			.ant-tabs-nav-operations .ant-tabs-nav-more {
 				padding: 0;
 				width: 40px;
@@ -341,7 +341,7 @@
 		box-shadow: 0 0.5em 1em 0 rgb(0 0 0 / 10%);
 		border-radius: 1px;
 	}
-	.snowy-tags {
+	.support-tags {
 		.right-menu-item {
 			display: flex;
 			align-items: center;

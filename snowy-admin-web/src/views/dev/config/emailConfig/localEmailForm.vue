@@ -8,11 +8,11 @@
 			:label-col="{ ...layout.labelCol, offset: 0 }"
 			:wrapper-col="{ ...layout.wrapperCol, offset: 0 }"
 		>
-			<a-form-item label="发送邮箱号：" name="SNOWY_EMAIL_LOCAL_FROM">
-				<a-input v-model:value="formData.SNOWY_EMAIL_LOCAL_FROM" placeholder="请输入发送邮箱号" />
+			<a-form-item label="发送邮箱号：" name="SUPPORT_EMAIL_LOCAL_FROM">
+				<a-input v-model:value="formData.SUPPORT_EMAIL_LOCAL_FROM" placeholder="请输入发送邮箱号" />
 			</a-form-item>
-			<a-form-item label="邮箱密钥：" name="SNOWY_EMAIL_LOCAL_PASSWORD">
-				<a-input v-model:value="formData.SNOWY_EMAIL_LOCAL_PASSWORD" placeholder="请输入邮箱密钥" />
+			<a-form-item label="邮箱密钥：" name="SUPPORT_EMAIL_LOCAL_PASSWORD">
+				<a-input v-model:value="formData.SUPPORT_EMAIL_LOCAL_PASSWORD" placeholder="请输入邮箱密钥" />
 			</a-form-item>
 			<a-form-item>
 				<a-button type="primary" :loading="submitLoading" @click="onSubmit()">保存</a-button>
@@ -50,8 +50,8 @@
 
 	// 默认要校验的
 	const formRules = {
-		SNOWY_EMAIL_LOCAL_FROM: [required('请输入发送邮箱号')],
-		SNOWY_EMAIL_LOCAL_PASSWORD: [required('请输入邮箱密钥')]
+		SUPPORT_EMAIL_LOCAL_FROM: [required('请输入发送邮箱号')],
+		SUPPORT_EMAIL_LOCAL_PASSWORD: [required('请输入邮箱密钥')]
 	}
 	// 验证并提交数据
 	const onSubmit = () => {

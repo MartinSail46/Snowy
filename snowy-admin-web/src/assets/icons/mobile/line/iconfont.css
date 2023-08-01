@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "snowy"; /* Project id 3791763 */
+  font-family: "support"; /* Project id 3791763 */
   src: url('iconfont.ttf?t=1675526220710') format('truetype');
 }
 
-.snowy {
-  font-family: "snowy" !important;
+.support {
+  font-family: "support" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;

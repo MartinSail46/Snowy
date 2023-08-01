@@ -8,17 +8,17 @@
 			:label-col="{ ...layout.labelCol, offset: 0 }"
 			:wrapper-col="{ ...layout.wrapperCol, offset: 0 }"
 		>
-			<a-form-item label="腾讯云密钥ID：" name="SNOWY_FILE_TENCENT_SECRET_ID">
-				<a-input v-model:value="formData.SNOWY_FILE_TENCENT_SECRET_ID" placeholder="请输入腾讯云密钥ID" />
+			<a-form-item label="腾讯云密钥ID：" name="SUPPORT_FILE_TENCENT_SECRET_ID">
+				<a-input v-model:value="formData.SUPPORT_FILE_TENCENT_SECRET_ID" placeholder="请输入腾讯云密钥ID" />
 			</a-form-item>
-			<a-form-item label="腾讯云密钥SECRET：" name="SNOWY_FILE_TENCENT_SECRET_KEY">
-				<a-input v-model:value="formData.SNOWY_FILE_TENCENT_SECRET_KEY" placeholder="请输入腾讯云密钥SECRET" />
+			<a-form-item label="腾讯云密钥SECRET：" name="SUPPORT_FILE_TENCENT_SECRET_KEY">
+				<a-input v-model:value="formData.SUPPORT_FILE_TENCENT_SECRET_KEY" placeholder="请输入腾讯云密钥SECRET" />
 			</a-form-item>
-			<a-form-item label="腾讯云区域ID：" name="SNOWY_FILE_TENCENT_REGION_ID">
-				<a-input v-model:value="formData.SNOWY_FILE_TENCENT_REGION_ID" placeholder="请输入腾讯云区域ID" />
+			<a-form-item label="腾讯云区域ID：" name="SUPPORT_FILE_TENCENT_REGION_ID">
+				<a-input v-model:value="formData.SUPPORT_FILE_TENCENT_REGION_ID" placeholder="请输入腾讯云区域ID" />
 			</a-form-item>
-			<a-form-item label="腾讯云储存桶：" name="SNOWY_FILE_TENCENT_DEFAULT_BUCKET_NAME">
-				<a-input v-model:value="formData.SNOWY_FILE_TENCENT_DEFAULT_BUCKET_NAME" placeholder="请输入腾讯云储存桶" />
+			<a-form-item label="腾讯云储存桶：" name="SUPPORT_FILE_TENCENT_DEFAULT_BUCKET_NAME">
+				<a-input v-model:value="formData.SUPPORT_FILE_TENCENT_DEFAULT_BUCKET_NAME" placeholder="请输入腾讯云储存桶" />
 			</a-form-item>
 			<a-form-item>
 				<a-button type="primary" :loading="submitLoading" @click="onSubmit()">保存</a-button>
@@ -56,10 +56,10 @@
 
 	// 默认要校验的
 	const formRules = {
-		SNOWY_FILE_TENCENT_SECRET_ID: [required('请输入腾讯云密钥ID')],
-		SNOWY_FILE_TENCENT_SECRET_KEY: [required('请输入腾讯云密钥SECRET')],
-		SNOWY_FILE_TENCENT_REGION_ID: [required('请输入腾讯云区域ID')],
-		SNOWY_FILE_TENCENT_DEFAULT_BUCKET_NAME: [required('请输入腾讯云储存桶')]
+		SUPPORT_FILE_TENCENT_SECRET_ID: [required('请输入腾讯云密钥ID')],
+		SUPPORT_FILE_TENCENT_SECRET_KEY: [required('请输入腾讯云密钥SECRET')],
+		SUPPORT_FILE_TENCENT_REGION_ID: [required('请输入腾讯云区域ID')],
+		SUPPORT_FILE_TENCENT_DEFAULT_BUCKET_NAME: [required('请输入腾讯云储存桶')]
 	}
 	// 验证并提交数据
 	const onSubmit = () => {

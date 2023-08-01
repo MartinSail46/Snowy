@@ -10,11 +10,11 @@
 				:theme="sideTheme"
 				width="210"
 			>
-				<header id="snowyHeaderLogo" class="snowy-header-logo">
-					<div class="snowy-header-left">
+				<header id="supportHeaderLogo" class="support-header-logo">
+					<div class="support-header-left">
 						<div class="logo-bar">
-							<img class="logo" :src="sysBaseConfig.SNOWY_SYS_LOGO" />
-							<span>{{ sysBaseConfig.SNOWY_SYS_NAME }}</span>
+							<img class="logo" :src="sysBaseConfig.SUPPORT_SYS_LOGO" />
+							<span>{{ sysBaseConfig.SUPPORT_SYS_NAME }}</span>
 						</div>
 					</div>
 				</header>
@@ -37,8 +37,8 @@
 			<Side-m v-if="ismobile" />
 			<!-- 右侧布局 -->
 			<a-layout>
-				<div id="snowyHeader" class="snowy-header">
-					<div class="snowy-header-left" style="padding-left: 0px">
+				<div id="supportHeader" class="support-header">
+					<div class="support-header-left" style="padding-left: 0px">
 						<div v-if="!ismobile" class="panel-item hidden-sm-and-down" @click="menuIsCollapseClick">
 							<MenuUnfoldOutlined v-if="menuIsCollapse" />
 							<MenuFoldOutlined v-else />
@@ -46,7 +46,7 @@
 						<moduleMenu @switchModule="switchModule" />
 						<Topbar v-if="!ismobile && breadcrumbOpen" />
 					</div>
-					<div class="snowy-header-right">
+					<div class="support-header-right">
 						<userbar />
 					</div>
 				</div>
@@ -61,8 +61,8 @@
 						</router-view>
 						<iframe-view />
 						<div class="main-bottom-wrapper">
-							<a style="color: #a0a0a0" :href="sysBaseConfig.SNOWY_SYS_COPYRIGHT_URL" target="_blank">{{
-								sysBaseConfig.SNOWY_SYS_COPYRIGHT
+							<a style="color: #a0a0a0" :href="sysBaseConfig.SUPPORT_SYS_COPYRIGHT_URL" target="_blank">{{
+								sysBaseConfig.SUPPORT_SYS_COPYRIGHT
 							}}</a>
 						</div>
 					</div>
@@ -75,16 +75,16 @@
 	<template v-else-if="layout === 'doublerow'">
 		<a-layout>
 			<a-layout-sider v-if="!ismobile" width="80" :theme="sideTheme" :trigger="null" collapsible>
-				<header id="snowyHeaderLogo" class="snowy-header-logo">
-					<div class="snowy-header-left">
+				<header id="supportHeaderLogo" class="support-header-logo">
+					<div class="support-header-left">
 						<div class="logo-bar">
 							<router-link to="/">
-								<img class="logo" :title="sysBaseConfig.SNOWY_SYS_NAME" :src="sysBaseConfig.SNOWY_SYS_LOGO" />
+								<img class="logo" :title="sysBaseConfig.SUPPORT_SYS_NAME" :src="sysBaseConfig.SUPPORT_SYS_LOGO" />
 							</router-link>
 						</div>
 					</div>
 				</header>
-				<a-menu v-model:selectedKeys="doublerowSelectedKey" :theme="sideTheme" class="snowy-doublerow-layout-menu">
+				<a-menu v-model:selectedKeys="doublerowSelectedKey" :theme="sideTheme" class="support-doublerow-layout-menu">
 					<a-menu-item
 						v-for="item in menu"
 						:key="item.path"
@@ -108,8 +108,8 @@
 						<template #icon>
 							<component :is="item.meta.icon" style="padding-left: 10px" />
 						</template>
-						<div class="snowy-doublerow-layout-menu-item-fort-div">
-							<span class="snowy-doublerow-layout-menu-item-fort-div-span">
+						<div class="support-doublerow-layout-menu-item-fort-div">
+							<span class="support-doublerow-layout-menu-item-fort-div-span">
 								{{ item.meta.title }}
 							</span>
 						</div>
@@ -125,8 +125,8 @@
 				collapsible
 				:theme="secondMenuSideTheme"
 			>
-				<div v-if="!menuIsCollapse" id="snowyDoublerowSideTop" class="snowy-doublerow-side-top">
-					<h2 class="snowy-title">{{ pmenu.meta.title }}</h2>
+				<div v-if="!menuIsCollapse" id="supportDoublerowSideTop" class="support-doublerow-side-top">
+					<h2 class="support-title">{{ pmenu.meta.title }}</h2>
 				</div>
 				<a-menu
 					v-model:collapsed="menuIsCollapse"
@@ -142,8 +142,8 @@
 			<!-- 手机端情况下的左侧菜单 -->
 			<Side-m v-if="ismobile" />
 			<a-layout>
-				<div id="snowyHeader" class="snowy-header">
-					<div class="snowy-header-left" style="padding-left: 0px">
+				<div id="supportHeader" class="support-header">
+					<div class="support-header-left" style="padding-left: 0px">
 						<div v-if="!ismobile" class="panel-item hidden-sm-and-down" @click="menuIsCollapseClick">
 							<MenuUnfoldOutlined v-if="menuIsCollapse" />
 							<MenuFoldOutlined v-else />
@@ -151,7 +151,7 @@
 						<moduleMenu @switchModule="switchModule" />
 						<Topbar v-if="!ismobile && breadcrumbOpen" />
 					</div>
-					<div class="snowy-header-right">
+					<div class="support-header-right">
 						<userbar />
 					</div>
 				</div>
@@ -166,8 +166,8 @@
 						</router-view>
 						<iframe-view />
 						<div class="main-bottom-wrapper">
-							<a style="color: #a0a0a0" :href="sysBaseConfig.SNOWY_SYS_COPYRIGHT_URL" target="_blank">{{
-								sysBaseConfig.SNOWY_SYS_COPYRIGHT
+							<a style="color: #a0a0a0" :href="sysBaseConfig.SUPPORT_SYS_COPYRIGHT_URL" target="_blank">{{
+								sysBaseConfig.SUPPORT_SYS_COPYRIGHT
 							}}</a>
 						</div>
 					</div>
@@ -275,7 +275,7 @@
 			window.addEventListener('resize', this.onLayoutResize)
 			this.moduleMenu = this.$router.getMenu()
 			// 获取缓存中的菜单模块是哪个
-			const menuModuleId = tool.data.get('SNOWY_MENU_MODULE_ID')
+			const menuModuleId = tool.data.get('SUPPORT_MENU_MODULE_ID')
 			let menu = []
 			if (menuModuleId) {
 				// 防止切换一个无此应用的人
@@ -304,7 +304,7 @@
 					const menus = menu.filter((item) => item.id === id)[0].children
 					if (menus.length > 0) {
 						// 将此模块的唯一值加入缓存
-						tool.data.set('SNOWY_MENU_MODULE_ID', id)
+						tool.data.set('SUPPORT_MENU_MODULE_ID', id)
 						// 正儿八百的菜单
 						this.menu = this.filterUrl(menus)
 						// 然后将其跳转至指定界面，默认始终取排序第一的
@@ -473,24 +473,24 @@
 			// 切换顶栏颜色
 			switchoverTopHanderThemeColor() {
 				// 界面顶栏设置颜色
-				const header = document.getElementById('snowyHeader')
+				const header = document.getElementById('supportHeader')
 				this.topHanderThemeColorOpen
-					? header.classList.add('snowy-header-primary-color')
-					: header.classList.remove('snowy-header-primary-color')
+					? header.classList.add('support-header-primary-color')
+					: header.classList.remove('support-header-primary-color')
 				// 判断是否开启了通栏
-				const headerLogin = document.getElementById('snowyHeaderLogo')
+				const headerLogin = document.getElementById('supportHeaderLogo')
 				try {
 					this.topHanderThemeColorSpread
-						? headerLogin.classList.add('snowy-header-logo-primary-color')
-						: headerLogin.classList.remove('snowy-header-logo-primary-color')
+						? headerLogin.classList.add('support-header-logo-primary-color')
+						: headerLogin.classList.remove('support-header-logo-primary-color')
 				} catch (e) {}
 				// 如果是双排菜单，吧第二排的也给渲染了
 				if (this.layout === 'doublerow') {
-					const snowyDoublerowSideTop = document.getElementById('snowyDoublerowSideTop')
+					const supportDoublerowSideTop = document.getElementById('supportDoublerowSideTop')
 					try {
 						this.topHanderThemeColorSpread
-							? snowyDoublerowSideTop.classList.add('snowy-doublerow-side-top-primary-color')
-							: snowyDoublerowSideTop.classList.remove('snowy-doublerow-side-top-primary-color')
+							? supportDoublerowSideTop.classList.add('support-doublerow-side-top-primary-color')
+							: supportDoublerowSideTop.classList.remove('support-doublerow-side-top-primary-color')
 					} catch (e) {}
 				}
 			}

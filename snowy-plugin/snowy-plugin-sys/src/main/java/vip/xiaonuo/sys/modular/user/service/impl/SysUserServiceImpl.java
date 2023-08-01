@@ -1,15 +1,3 @@
-/*
- * Copyright [2022] [https://www.xiaonuo.vip]
- *
- * Snowy采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Snowy源码头部的版权声明。
- * 3.本项目代码可免费商业使用，商业使用请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://www.xiaonuo.vip
- * 5.不可二次分发开源参与同类竞品，如有想法可联系团队xiaonuobase@qq.com商议合作。
- * 6.若您的项目无法满足以上几点，需要更多功能代码，获取Snowy商业授权许可，请在官网购买授权，地址为 https://www.xiaonuo.vip
- */
 package vip.xiaonuo.sys.modular.user.service.impl;
 
 import cn.afterturn.easypoi.cache.manager.POICacheManager;
@@ -119,9 +107,9 @@ import java.util.stream.Collectors;
 @Service
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements SysUserService {
 
-    private static final String SNOWY_SYS_DEFAULT_PASSWORD_KEY = "SNOWY_SYS_DEFAULT_PASSWORD";
+    private static final String SUPPORT_SYS_DEFAULT_PASSWORD_KEY = "SUPPORT_SYS_DEFAULT_PASSWORD";
 
-    private static final String SNOWY_SYS_DEFAULT_WORKBENCH_DATA_KEY = "SNOWY_SYS_DEFAULT_WORKBENCH_DATA";
+    private static final String SUPPORT_SYS_DEFAULT_WORKBENCH_DATA_KEY = "SUPPORT_SYS_DEFAULT_WORKBENCH_DATA";
 
     private static final String USER_VALID_CODE_CACHE_KEY = "user-validCode:";
 
@@ -245,7 +233,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
             sysUser.setAvatar(CommonAvatarUtil.generateImg(sysUser.getName()));
         }
         // 设置默认密码
-        sysUser.setPassword(CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SNOWY_SYS_DEFAULT_PASSWORD_KEY)));
+        sysUser.setPassword(CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SUPPORT_SYS_DEFAULT_PASSWORD_KEY)));
         // 设置状态
         sysUser.setUserStatus(SysUserStatusEnum.ENABLE.getValue());
         this.save(sysUser);
@@ -384,7 +372,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     public void resetPassword(SysUserIdParam sysUserIdParam) {
         this.update(new LambdaUpdateWrapper<SysUser>().eq(SysUser::getId,
                 sysUserIdParam.getId()).set(SysUser::getPassword,
-                CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SNOWY_SYS_DEFAULT_PASSWORD_KEY))));
+                CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SUPPORT_SYS_DEFAULT_PASSWORD_KEY))));
     }
 
     @Override
@@ -902,7 +890,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         if (ObjectUtil.isNotEmpty(sysRelation)) {
             return sysRelation.getExtJson();
         }
-        return devConfigApi.getValueByKey(SNOWY_SYS_DEFAULT_WORKBENCH_DATA_KEY);
+        return devConfigApi.getValueByKey(SUPPORT_SYS_DEFAULT_WORKBENCH_DATA_KEY);
     }
 
     @Override
@@ -1000,7 +988,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         try {
             InputStream inputStream = POICacheManager.getFile("userImportTemplate.xlsx");
             byte[] bytes = IoUtil.readBytes(inputStream);
-            CommonDownloadUtil.download("SNOWY2.0系统B端用户导入模板.xlsx", bytes, response);
+            CommonDownloadUtil.download("SUPPORT1.0系统B端用户导入模板.xlsx", bytes, response);
         } catch (Exception e) {
             log.error(">>> 下载用户导入模板失败：", e);
             CommonResponseUtil.renderError(response, "下载用户导入模板失败");
@@ -1138,7 +1126,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
                     // 设置默认头像
                     sysUser.setAvatar(CommonAvatarUtil.generateImg(sysUser.getName()));
                     // 设置默认密码
-                    sysUser.setPassword(CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SNOWY_SYS_DEFAULT_PASSWORD_KEY)));
+                    sysUser.setPassword(CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SUPPORT_SYS_DEFAULT_PASSWORD_KEY)));
                     // 设置排序码
                     sysUser.setSortCode(99);
                     // 设置状态
@@ -1185,7 +1173,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
                     queryWrapper.lambda().eq(SysUser::getUserStatus, sysUserExportParam.getUserStatus());
                 }
             }
-            String fileName = "SNOWY2.0系统B端用户信息清单.xlsx";
+            String fileName = "SUPPORT1.0系统B端用户信息清单.xlsx";
             List<SysUser> sysUserList = this.list(queryWrapper);
             if(ObjectUtil.isEmpty(sysUserList)) {
                 throw new CommonException("无数据可导出");
@@ -1339,7 +1327,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
             // 生成doc
             XWPFDocument doc = WordExportUtil.exportWord07(destTemplateFile.getAbsolutePath(), map);
             // 生成临时导出文件
-            resultFile = FileUtil.file(FileUtil.getTmpDir() + File.separator + "SNOWY2.0系统B端用户信息_" + sysUser.getName() + ".docx");
+            resultFile = FileUtil.file(FileUtil.getTmpDir() + File.separator + "SUPPORT1.0系统B端用户信息_" + sysUser.getName() + ".docx");
             // 写入
             BufferedOutputStream outputStream = FileUtil.getOutputStream(resultFile);
             doc.write(outputStream);

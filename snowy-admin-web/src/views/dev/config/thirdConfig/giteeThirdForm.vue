@@ -8,14 +8,14 @@
 			:label-col="{ ...layout.labelCol, offset: 0 }"
 			:wrapper-col="{ ...layout.wrapperCol, offset: 0 }"
 		>
-			<a-form-item label="GITEE客户端ID：" name="SNOWY_THIRD_GITEE_CLIENT_ID">
-				<a-input v-model:value="formData.SNOWY_THIRD_GITEE_CLIENT_ID" placeholder="请输入GITEE客户端ID" />
+			<a-form-item label="GITEE客户端ID：" name="SUPPORT_THIRD_GITEE_CLIENT_ID">
+				<a-input v-model:value="formData.SUPPORT_THIRD_GITEE_CLIENT_ID" placeholder="请输入GITEE客户端ID" />
 			</a-form-item>
-			<a-form-item label="GITEE客户端SECRET：" name="SNOWY_THIRD_GITEE_CLIENT_SECRET">
-				<a-input v-model:value="formData.SNOWY_THIRD_GITEE_CLIENT_SECRET" placeholder="请输入GITEE客户端SECRET" />
+			<a-form-item label="GITEE客户端SECRET：" name="SUPPORT_THIRD_GITEE_CLIENT_SECRET">
+				<a-input v-model:value="formData.SUPPORT_THIRD_GITEE_CLIENT_SECRET" placeholder="请输入GITEE客户端SECRET" />
 			</a-form-item>
-			<a-form-item label="重定向URL：" name="SNOWY_THIRD_GITEE_REDIRECT_URL">
-				<a-input v-model:value="formData.SNOWY_THIRD_GITEE_REDIRECT_URL" placeholder="请输入重定向URL" />
+			<a-form-item label="重定向URL：" name="SUPPORT_THIRD_GITEE_REDIRECT_URL">
+				<a-input v-model:value="formData.SUPPORT_THIRD_GITEE_REDIRECT_URL" placeholder="请输入重定向URL" />
 			</a-form-item>
 			<a-form-item>
 				<a-button type="primary" :loading="submitLoading" @click="onSubmit()">保存</a-button>
@@ -53,9 +53,9 @@
 
 	// 默认要校验的
 	const formRules = {
-		SNOWY_THIRD_GITEE_CLIENT_ID: [required('请输入GITEE客户端ID')],
-		SNOWY_THIRD_GITEE_CLIENT_SECRET: [required('请输入GITEE客户端SECRET')],
-		SNOWY_THIRD_GITEE_REDIRECT_URL: [required('请输入重定向URL')]
+		SUPPORT_THIRD_GITEE_CLIENT_ID: [required('请输入GITEE客户端ID')],
+		SUPPORT_THIRD_GITEE_CLIENT_SECRET: [required('请输入GITEE客户端SECRET')],
+		SUPPORT_THIRD_GITEE_REDIRECT_URL: [required('请输入重定向URL')]
 	}
 	// 验证并提交数据
 	const onSubmit = () => {

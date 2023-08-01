@@ -1,19 +1,19 @@
 <div align="center">
     <p align="center">
-        <img src="./snowy-admin-web/public/img/logo.png" height="150" alt="logo"/>
+        <img src="./support-admin-web/public/img/logo.png" height="150" alt="logo"/>
     </p>
 </div>
 
 ## 框架介绍
 
-Snowy（SnowyAdmin）是国内首个国密前后端分离快速开发平台，集成国密加解密插件，
+support（supportAdmin）是国内首个国密前后端分离快速开发平台，集成国密加解密插件，
 软件层面完全符合等保测评要求，同时实现国产化机型、中间件、数据库适配，是您的不二之选！
 技术框架与密码结合，让更多的人认识密码，使用密码；更是让前后分离“密”不可分。
 
 
 采用SpringBoot+MybatisPlus+AntDesignVue+Vite 等更多优秀组件及前沿技术开发，注释丰富，代码简洁，开箱即用！
 
-Snowy谐音“小诺”，恰应小诺团队名称；意思为”下雪的、纯洁的“，寓意框架追求简洁至上，大道至简。
+support谐音“小诺”，恰应小诺团队名称；意思为”下雪的、纯洁的“，寓意框架追求简洁至上，大道至简。
 
 <p align="center">     
     <p align="center">
@@ -88,11 +88,11 @@ npm run dev
 
 ## 代码结构
 
-Snowy2.0框架对代码以插件化的模式进行分包，使得包层级结构更加清晰合理，同时降低了耦合度，关于插件模块化开发的规范请查阅文档【SNOWY开源文档——前端手册or后端手册——开发规范】板块。
+Support1.0框架对代码以插件化的模式进行分包，使得包层级结构更加清晰合理，同时降低了耦合度，关于插件模块化开发的规范请查阅文档【support开源文档——前端手册or后端手册——开发规范】板块。
 
 ```
-snowy
-  |-snowy-admin-web == 前端
+support
+  |-support-admin-web == 前端
     |-public == 基础静态文件
     |-src == 前端源代码
       |-api == API接口转发
@@ -106,24 +106,24 @@ snowy
       |-style == 样式风格配置
       |-utils == 工具类
       |-views == 所有视图界面
-  |-snowy-common == 基础通用模块
-  |-snowy-plugin == 插件包
-    |-snowy-plugin-auth == 登录鉴权插件
-    |-snowy-plugin-biz == 业务功能插件
-    |-snowy-plugin-client == C端功能插件
-    |-snowy-plugin-dev == 开发工具插件
-    |-snowy-plugin-gen == 代码生成插件
-    |-snowy-plugin-mobile == 移动端管理插件
-    |-snowy-plugin-sys == 系统功能插件
-  |-snowy-plugin-api == 插件api包
-    |-snowy-plugin-auth-api == 登录鉴权插件api接口
-    |-snowy-plugin-biz-api == 业务功能插件api接口
-    |-snowy-plugin-client-api == C端功能插件api接口
-    |-snowy-plugin-dev-api == 开发工具插件api接口
-    |-snowy-plugin-gen == 代码生成插件api接口
-    |-snowy-plugin-mobile == 移动端管理插件api接口
-    |-snowy-plugin-sys-api == 系统功能插件api接口
-  |-snowy-web-app == 主启动模块
+  |-support-common == 基础通用模块
+  |-support-plugin == 插件包
+    |-support-plugin-auth == 登录鉴权插件
+    |-support-plugin-biz == 业务功能插件
+    |-support-plugin-client == C端功能插件
+    |-support-plugin-dev == 开发工具插件
+    |-support-plugin-gen == 代码生成插件
+    |-support-plugin-mobile == 移动端管理插件
+    |-support-plugin-sys == 系统功能插件
+  |-support-plugin-api == 插件api包
+    |-support-plugin-auth-api == 登录鉴权插件api接口
+    |-support-plugin-biz-api == 业务功能插件api接口
+    |-support-plugin-client-api == C端功能插件api接口
+    |-support-plugin-dev-api == 开发工具插件api接口
+    |-support-plugin-gen == 代码生成插件api接口
+    |-support-plugin-mobile == 移动端管理插件api接口
+    |-support-plugin-sys-api == 系统功能插件api接口
+  |-support-web-app == 主启动模块
 ```
 
 
@@ -137,7 +137,7 @@ snowy
 
 团队开发的分支（代码可能随时会推，不保证运行和使用）
 
-- snowy1.8 
+- support1.8 
 
 1.x分支，目前已停止新增功能，只限于bug的维护，推荐使用2x版本
 
@@ -225,13 +225,13 @@ QQ技术群：732230670（已满）、685395081
 
 ## 代码贡献
 
-近期有很多热心开源的小伙伴陆续为咱们Snowy框架提交PR或者提出好的建议，基本合格的PR我们都接受，这样您的头像就列入到咱们Snowy仓库的贡献者列表啦！
+近期有很多热心开源的小伙伴陆续为咱们Support框架提交PR或者提出好的建议，基本合格的PR我们都接受，这样您的头像就列入到咱们support仓库的贡献者列表啦！
 
 如何贡献：
 
 1、fork一份代码至自己的账号下，本地修改您要提的代码，提交至您fork的仓库
 
-2、登录gitee后到Snowy仓库下创建Pull Requests,选择您的仓库到Snowy的dev分支，提交即可
+2、登录gitee后到Support仓库下创建Pull Requests,选择您的仓库到Support的dev分支，提交即可
 
 因为dev分支是团队开发分支，并不是统一发版本的测试过的，所以我们建议提代码至dev即可
 
@@ -252,10 +252,10 @@ QQ技术群：732230670（已满）、685395081
 
 ## 版权说明
 
-- Snowy生态技术框架全系版本采用 Apache License2.0协议
+- Support生态技术框架全系版本采用 Apache License2.0协议
 
-- 代码可用于个人项目等接私活或企业项目脚手架使用，Snowy全系开源版完全免费
+- 代码可用于个人项目等接私活或企业项目脚手架使用，Support全系开源版完全免费
 
 - 二次开发如用于开源竞品请先联系群主沟通，禁止任何变相的二开行为，未经审核视为侵权
 
-- 请不要删除和修改Snowy源码头部的版权与作者声明及出处
+- 请不要删除和修改Support源码头部的版权与作者声明及出处

@@ -1,15 +1,3 @@
-/*
- * Copyright [2022] [https://www.xiaonuo.vip]
- *
- * Snowy采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Snowy源码头部的版权声明。
- * 3.本项目代码可免费商业使用，商业使用请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://www.xiaonuo.vip
- * 5.不可二次分发开源参与同类竞品，如有想法可联系团队xiaonuobase@qq.com商议合作。
- * 6.若您的项目无法满足以上几点，需要更多功能代码，获取Snowy商业授权许可，请在官网购买授权，地址为 https://www.xiaonuo.vip
- */
 package vip.xiaonuo.dev.modular.file.util;
 
 import cn.hutool.core.io.FileUtil;
@@ -49,10 +37,10 @@ public class DevFileAliyunUtil {
 
     private static String defaultBucketName;
 
-    private static final String SNOWY_FILE_ALIYUN_ACCESS_KEY_ID_KEY = "SNOWY_FILE_ALIYUN_ACCESS_KEY_ID";
-    private static final String SNOWY_FILE_ALIYUN_ACCESS_KEY_SECRET_KEY = "SNOWY_FILE_ALIYUN_ACCESS_KEY_SECRET";
-    private static final String SNOWY_FILE_ALIYUN_END_POINT_KEY = "SNOWY_FILE_ALIYUN_END_POINT";
-    private static final String SNOWY_FILE_ALIYUN_DEFAULT_BUCKET_NAME = "SNOWY_FILE_ALIYUN_DEFAULT_BUCKET_NAME";
+    private static final String SUPPORT_FILE_ALIYUN_ACCESS_KEY_ID_KEY = "SUPPORT_FILE_ALIYUN_ACCESS_KEY_ID";
+    private static final String SUPPORT_FILE_ALIYUN_ACCESS_KEY_SECRET_KEY = "SUPPORT_FILE_ALIYUN_ACCESS_KEY_SECRET";
+    private static final String SUPPORT_FILE_ALIYUN_END_POINT_KEY = "SUPPORT_FILE_ALIYUN_END_POINT";
+    private static final String SUPPORT_FILE_ALIYUN_DEFAULT_BUCKET_NAME = "SUPPORT_FILE_ALIYUN_DEFAULT_BUCKET_NAME";
 
     /**
      * 初始化操作的客户端
@@ -65,28 +53,28 @@ public class DevFileAliyunUtil {
         DevConfigApi devConfigApi = SpringUtil.getBean(DevConfigApi.class);
 
         /* accessKeyId */
-        String accessKeyId = devConfigApi.getValueByKey(SNOWY_FILE_ALIYUN_ACCESS_KEY_ID_KEY);
+        String accessKeyId = devConfigApi.getValueByKey(SUPPORT_FILE_ALIYUN_ACCESS_KEY_ID_KEY);
 
         if(ObjectUtil.isEmpty(accessKeyId)) {
             throw new CommonException("阿里云文件操作客户端未正确配置：accessKeyId为空");
         }
 
         /* accessKeySecret */
-        String accessKeySecret = devConfigApi.getValueByKey(SNOWY_FILE_ALIYUN_ACCESS_KEY_SECRET_KEY);
+        String accessKeySecret = devConfigApi.getValueByKey(SUPPORT_FILE_ALIYUN_ACCESS_KEY_SECRET_KEY);
 
         if(ObjectUtil.isEmpty(accessKeySecret)) {
             throw new CommonException("阿里云文件操作客户端未正确配置：accessKeySecret为空");
         }
 
         /* endpoint */
-        String endpoint = devConfigApi.getValueByKey(SNOWY_FILE_ALIYUN_END_POINT_KEY);
+        String endpoint = devConfigApi.getValueByKey(SUPPORT_FILE_ALIYUN_END_POINT_KEY);
 
         if(ObjectUtil.isEmpty(accessKeySecret)) {
             throw new CommonException("阿里云文件操作客户端未正确配置：endpoint为空");
         }
 
         /* 默认BucketName */
-        defaultBucketName = devConfigApi.getValueByKey(SNOWY_FILE_ALIYUN_DEFAULT_BUCKET_NAME);
+        defaultBucketName = devConfigApi.getValueByKey(SUPPORT_FILE_ALIYUN_DEFAULT_BUCKET_NAME);
 
         if(ObjectUtil.isEmpty(defaultBucketName)) {
             throw new CommonException("阿里云文件操作客户端未正确配置：defaultBucketName为空");

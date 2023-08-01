@@ -13,7 +13,7 @@
             </uni-forms-item>
             <% } else if (configList[i].effectType == 'select') {%>
             <uni-forms-item label="${configList[i].fieldRemark}" name="${configList[i].fieldNameCamelCase}" :required="${configList[i].required}" :rules="[{ required: ${configList[i].required}, errorMessage: '请输入${configList[i].fieldRemark}' }]">
-                <snowy-sel-picker :map="{key: 'value', label: 'text'}" v-model="formData.${configList[i].fieldNameCamelCase}" :rangeData="${configList[i].fieldNameCamelCase}Options" placeholder="请选择${configList[i].fieldRemark}"></snowy-sel-picker>
+                <support-sel-picker :map="{key: 'value', label: 'text'}" v-model="formData.${configList[i].fieldNameCamelCase}" :rangeData="${configList[i].fieldNameCamelCase}Options" placeholder="请选择${configList[i].fieldRemark}"></support-sel-picker>
             </uni-forms-item>
             <% } else if (configList[i].effectType == 'radio' || configList[i].effectType == 'checkbox') {%>
             <uni-forms-item label="${configList[i].fieldRemark}" name="${configList[i].fieldNameCamelCase}" :required="${configList[i].required}" :rules="[{ required: ${configList[i].required}, errorMessage: '请选择${configList[i].fieldRemark}' }]">
@@ -52,7 +52,7 @@
     %>
     <% if(iptTool > 0) { %>
     import tool from '@/plugins/tool'
-    import SnowySelPicker from '@/components/snowy-sel-picker.vue'
+    import SupportSelPicker from '@/components/support-sel-picker.vue'
     <% } %>
     import XEUtils from "xe-utils"
     import { onLoad } from "@dcloudio/uni-app"

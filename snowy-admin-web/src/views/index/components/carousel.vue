@@ -1,5 +1,5 @@
 <template>
-	<a-carousel class="snowy-right-card-one" autoplay arrows>
+	<a-carousel class="support-right-card-one" autoplay arrows>
 		<template #prevArrow>
 			<div class="custom-slick-arrow" style="left: 10px; z-index: 1">
 				<left-circle-outlined />
@@ -56,7 +56,7 @@
 		width: 100%;
 		cursor: pointer;
 	}
-	.snowy-right-card-one {
+	.support-right-card-one {
 		height: 160px;
 	}
 

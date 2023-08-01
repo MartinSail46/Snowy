@@ -1,15 +1,3 @@
-/*
- * Copyright [2022] [https://www.xiaonuo.vip]
- *
- * Snowy采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Snowy源码头部的版权声明。
- * 3.本项目代码可免费商业使用，商业使用请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://www.xiaonuo.vip
- * 5.不可二次分发开源参与同类竞品，如有想法可联系团队xiaonuobase@qq.com商议合作。
- * 6.若您的项目无法满足以上几点，需要更多功能代码，获取Snowy商业授权许可，请在官网购买授权，地址为 https://www.xiaonuo.vip
- */
 package vip.xiaonuo.dev.modular.file.util;
 
 import cn.hutool.core.io.FileUtil;
@@ -41,8 +29,8 @@ public class DevFileLocalUtil {
 
     private static JSONObject client;
 
-    private static final String SNOWY_FILE_LOCAL_FOLDER_FOR_WINDOWS_KEY = "SNOWY_FILE_LOCAL_FOLDER_FOR_WINDOWS";
-    private static final String SNOWY_FILE_LOCAL_FOLDER_FOR_UNIX_KEY = "SNOWY_FILE_LOCAL_FOLDER_FOR_UNIX";
+    private static final String SUPPORT_FILE_LOCAL_FOLDER_FOR_WINDOWS_KEY = "SUPPORT_FILE_LOCAL_FOLDER_FOR_WINDOWS";
+    private static final String SUPPORT_FILE_LOCAL_FOLDER_FOR_UNIX_KEY = "SUPPORT_FILE_LOCAL_FOLDER_FOR_UNIX";
 
     /**
      * 初始化操作的客户端
@@ -59,19 +47,19 @@ public class DevFileLocalUtil {
         if(SystemUtil.getOsInfo().isWindows()) {
 
             /* 本地文件上传的位置 windows系统 */
-            String localFolderForWindows = devConfigApi.getValueByKey(SNOWY_FILE_LOCAL_FOLDER_FOR_WINDOWS_KEY);
+            String localFolderForWindows = devConfigApi.getValueByKey(SUPPORT_FILE_LOCAL_FOLDER_FOR_WINDOWS_KEY);
 
             if(ObjectUtil.isEmpty(localFolderForWindows)) {
-                throw new CommonException("本地文件操作客户端未正确配置：SNOWY_FILE_LOCAL_FOLDER_FOR_WINDOWS为空");
+                throw new CommonException("本地文件操作客户端未正确配置：SUPPORT_FILE_LOCAL_FOLDER_FOR_WINDOWS为空");
             }
             uploadFileFolder = localFolderForWindows;
         } else {
 
             /* 本地文件上传的位置 unix系列系统（linux、mac等） */
-            String localFolderForUnix = devConfigApi.getValueByKey(SNOWY_FILE_LOCAL_FOLDER_FOR_UNIX_KEY);
+            String localFolderForUnix = devConfigApi.getValueByKey(SUPPORT_FILE_LOCAL_FOLDER_FOR_UNIX_KEY);
 
             if(ObjectUtil.isEmpty(localFolderForUnix)) {
-                throw new CommonException("本地文件操作客户端未正确配置：SNOWY_FILE_LOCAL_FOLDER_FOR_UNIX为空");
+                throw new CommonException("本地文件操作客户端未正确配置：SUPPORT_FILE_LOCAL_FOLDER_FOR_UNIX为空");
             }
             uploadFileFolder = localFolderForUnix;
         }

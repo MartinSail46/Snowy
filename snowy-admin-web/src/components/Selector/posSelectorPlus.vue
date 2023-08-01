@@ -32,7 +32,7 @@
 							</a-col>
 							<a-col :span="12">
 								<a-button type="primary" class="primarySele" @click="loadData()"> 查询 </a-button>
-								<a-button class="snowy-buttom-left" @click="() => reset()"> 重置 </a-button>
+								<a-button class="support-buttom-left" @click="() => reset()"> 重置 </a-button>
 							</a-col>
 						</a-row>
 					</a-form>

@@ -1,5 +1,5 @@
 <template>
-	<div class="snowy-color-picker" @click="forceResize">
+	<div class="support-color-picker" @click="forceResize">
 		<color-picker v-bind="$attrs" format="hex" :pureColor="props.value" @update:pureColor="update" />
 	</div>
 </template>
@@ -31,7 +31,7 @@
 </script>
 
 <style lang="less">
-	.snowy-color-picker {
+	.support-color-picker {
 		.vc-color-wrap {
 			width: auto;
 		}

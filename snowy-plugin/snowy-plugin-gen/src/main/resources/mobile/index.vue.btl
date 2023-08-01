@@ -53,7 +53,7 @@
                     </template>
                 </uni-list-item>
             </uni-list>
-            <snowy-empty v-if="$utils.isEmpty(${classNameFirstLower}Data)" />
+            <support-empty v-if="$utils.isEmpty(${classNameFirstLower}Data)" />
         </view>
         <!-- 新增悬浮按钮 -->
         <uni-fab
@@ -78,7 +78,7 @@
     <% if (searchCount > 0) { %>
     import search from './search.vue'
     <% } %>
-    import SnowyEmpty from "@/components/snowy-empty.vue"
+    import SupportEmpty from "@/components/support-empty.vue"
     import { ${classNameFirstLower}Page } from '@/api/${moduleName}/${classNameFirstLower}Api'
     import more from './more.vue'
     import XEUtils from 'xe-utils'

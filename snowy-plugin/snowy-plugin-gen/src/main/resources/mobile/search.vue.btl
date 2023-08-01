@@ -18,7 +18,7 @@
                 </uni-forms-item>
                 <% } else if (configList[i].effectType == 'select' || configList[i].effectType == 'radio' || configList[i].effectType == 'checkbox') {%>
                 <uni-forms-item label="${configList[i].fieldRemark}" name="${configList[i].fieldNameCamelCase}">
-                	<snowy-sel-picker :map="{key: 'value', label: 'text'}" v-model="searchFormState.${configList[i].fieldNameCamelCase}" :rangeData="${configList[i].fieldNameCamelCase}Options" placeholder="请选择${configList[i].fieldRemark}"></snowy-sel-picker>
+                	<support-sel-picker :map="{key: 'value', label: 'text'}" v-model="searchFormState.${configList[i].fieldNameCamelCase}" :rangeData="${configList[i].fieldNameCamelCase}Options" placeholder="请选择${configList[i].fieldRemark}"></support-sel-picker>
                 </uni-forms-item>
                 <% } else if (configList[i].effectType == 'inputNumber' || configList[i].effectType == 'slider') {%>
                 <uni-forms-item label="${configList[i].fieldRemark}" name="${configList[i].fieldNameCamelCase}">
@@ -63,7 +63,7 @@
     %>
     <% if(iptTool > 0) { %>
     import tool from '@/plugins/tool'
-    import SnowySelPicker from '@/components/snowy-sel-picker.vue'
+    import SupportSelPicker from '@/components/support-sel-picker.vue'
     <% } %>
     import { ref } from "vue"
     const emits = defineEmits(['reset', 'confirm'])

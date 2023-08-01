@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>vip.xiaonuo</groupId>
-        <artifactId>snowy</artifactId>
-        <version>2.0.0</version>
+        <groupId>com.amarsoft</groupId>
+        <artifactId>support</artifactId>
+        <version>1.0.0</version>
     </parent>
 
-    <artifactId>snowy-web-app</artifactId>
+    <artifactId>support-web-app</artifactId>
     <packaging>jar</packaging>
     <description>主启动模块</description>
 
@@ -79,44 +79,44 @@
 
         <!-- 登录鉴权插件 -->
         <dependency>
-            <groupId>vip.xiaonuo</groupId>
-            <artifactId>snowy-plugin-auth</artifactId>
+            <groupId>com.amarsoft</groupId>
+            <artifactId>support-plugin-auth</artifactId>
         </dependency>
 
         <!-- 业务功能插件 -->
         <dependency>
-            <groupId>vip.xiaonuo</groupId>
-            <artifactId>snowy-plugin-biz</artifactId>
+            <groupId>com.amarsoft</groupId>
+            <artifactId>support-plugin-biz</artifactId>
         </dependency>
 
         <!-- C端功能插件 -->
         <dependency>
-            <groupId>vip.xiaonuo</groupId>
-            <artifactId>snowy-plugin-client</artifactId>
+            <groupId>com.amarsoft</groupId>
+            <artifactId>support-plugin-client</artifactId>
         </dependency>
 
         <!-- 开发工具插件 -->
         <dependency>
-            <groupId>vip.xiaonuo</groupId>
-            <artifactId>snowy-plugin-dev</artifactId>
+            <groupId>com.amarsoft</groupId>
+            <artifactId>support-plugin-dev</artifactId>
         </dependency>
 
         <!-- 代码生成插件 -->
         <dependency>
-            <groupId>vip.xiaonuo</groupId>
-            <artifactId>snowy-plugin-gen</artifactId>
+            <groupId>com.amarsoft</groupId>
+            <artifactId>support-plugin-gen</artifactId>
         </dependency>
 
         <!-- 移动端管理插件 -->
         <dependency>
-            <groupId>vip.xiaonuo</groupId>
-            <artifactId>snowy-plugin-mobile</artifactId>
+            <groupId>com.amarsoft</groupId>
+            <artifactId>support-plugin-mobile</artifactId>
         </dependency>
 
         <!-- 系统功能插件 -->
         <dependency>
-            <groupId>vip.xiaonuo</groupId>
-            <artifactId>snowy-plugin-sys</artifactId>
+            <groupId>com.amarsoft</groupId>
+            <artifactId>support-plugin-sys</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,15 +1,3 @@
-/*
- * Copyright [2022] [https://www.xiaonuo.vip]
- *
- * Snowy采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Snowy源码头部的版权声明。
- * 3.本项目代码可免费商业使用，商业使用请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://www.xiaonuo.vip
- * 5.不可二次分发开源参与同类竞品，如有想法可联系团队xiaonuobase@qq.com商议合作。
- * 6.若您的项目无法满足以上几点，需要更多功能代码，获取Snowy商业授权许可，请在官网购买授权，地址为 https://www.xiaonuo.vip
- */
 package vip.xiaonuo.biz.modular.user.service.impl;
 
 import cn.afterturn.easypoi.cache.manager.POICacheManager;
@@ -96,7 +84,7 @@ import java.util.stream.Collectors;
 @Service
 public class BizUserServiceImpl extends ServiceImpl<BizUserMapper, BizUser> implements BizUserService {
 
-    private static final String SNOWY_SYS_DEFAULT_PASSWORD_KEY = "SNOWY_SYS_DEFAULT_PASSWORD";
+    private static final String SUPPORT_SYS_DEFAULT_PASSWORD_KEY = "SUPPORT_SYS_DEFAULT_PASSWORD";
 
     @Resource
     private TransService transService;
@@ -158,7 +146,7 @@ public class BizUserServiceImpl extends ServiceImpl<BizUserMapper, BizUser> impl
             bizUser.setAvatar(CommonAvatarUtil.generateImg(bizUser.getName()));
         }
         // 设置密码
-        bizUser.setPassword(CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SNOWY_SYS_DEFAULT_PASSWORD_KEY)));
+        bizUser.setPassword(CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SUPPORT_SYS_DEFAULT_PASSWORD_KEY)));
         // 设置状态
         bizUser.setUserStatus(BizUserStatusEnum.ENABLE.getValue());
         this.save(bizUser);
@@ -368,7 +356,7 @@ public class BizUserServiceImpl extends ServiceImpl<BizUserMapper, BizUser> impl
         }
         this.update(new LambdaUpdateWrapper<BizUser>().eq(BizUser::getId,
                 bizUserIdParam.getId()).set(BizUser::getPassword,
-                CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SNOWY_SYS_DEFAULT_PASSWORD_KEY))));
+                CommonCryptogramUtil.doHashValue(devConfigApi.getValueByKey(SUPPORT_SYS_DEFAULT_PASSWORD_KEY))));
     }
 
     @Override
@@ -420,7 +408,7 @@ public class BizUserServiceImpl extends ServiceImpl<BizUserMapper, BizUser> impl
                     queryWrapper.lambda().eq(BizUser::getUserStatus, bizUserExportParam.getUserStatus());
                 }
             }
-            String fileName = "SNOWY2.0系统B端人员信息清单.xlsx";
+            String fileName = "SUPPORT1.0系统B端人员信息清单.xlsx";
             List<BizUser> bizUserList = this.list(queryWrapper);
             if(ObjectUtil.isEmpty(bizUserList)) {
                 throw new CommonException("无数据可导出");
@@ -574,7 +562,7 @@ public class BizUserServiceImpl extends ServiceImpl<BizUserMapper, BizUser> impl
             // 生成doc
             XWPFDocument doc = WordExportUtil.exportWord07(destTemplateFile.getAbsolutePath(), map);
             // 生成临时导出文件
-            resultFile = FileUtil.file(FileUtil.getTmpDir() + File.separator + "SNOWY2.0系统B端人员信息_" + bizUser.getName() + ".docx");
+            resultFile = FileUtil.file(FileUtil.getTmpDir() + File.separator + "SUPPORT1.0系统B端人员信息_" + bizUser.getName() + ".docx");
             // 写入
             BufferedOutputStream outputStream = FileUtil.getOutputStream(resultFile);
             doc.write(outputStream);

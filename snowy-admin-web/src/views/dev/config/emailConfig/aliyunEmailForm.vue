@@ -8,14 +8,14 @@
 			:label-col="{ ...layout.labelCol, offset: 0 }"
 			:wrapper-col="{ ...layout.wrapperCol, offset: 0 }"
 		>
-			<a-form-item label="阿里云密钥ID：" name="SNOWY_EMAIL_ALIYUN_ACCESS_KEY_ID">
-				<a-input v-model:value="formData.SNOWY_EMAIL_ALIYUN_ACCESS_KEY_ID" placeholder="请输入阿里云密钥ID" />
+			<a-form-item label="阿里云密钥ID：" name="SUPPORT_EMAIL_ALIYUN_ACCESS_KEY_ID">
+				<a-input v-model:value="formData.SUPPORT_EMAIL_ALIYUN_ACCESS_KEY_ID" placeholder="请输入阿里云密钥ID" />
 			</a-form-item>
-			<a-form-item label="阿里云密钥SECRET：" name="SNOWY_EMAIL_ALIYUN_ACCESS_KEY_SECRET">
-				<a-input v-model:value="formData.SNOWY_EMAIL_ALIYUN_ACCESS_KEY_SECRET" placeholder="请输入阿里云密钥SECRET" />
+			<a-form-item label="阿里云密钥SECRET：" name="SUPPORT_EMAIL_ALIYUN_ACCESS_KEY_SECRET">
+				<a-input v-model:value="formData.SUPPORT_EMAIL_ALIYUN_ACCESS_KEY_SECRET" placeholder="请输入阿里云密钥SECRET" />
 			</a-form-item>
-			<a-form-item label="阿里云区域ID：" name="SNOWY_EMAIL_ALIYUN_REGION_ID">
-				<a-input v-model:value="formData.SNOWY_EMAIL_ALIYUN_REGION_ID" placeholder="请输入阿里云区域ID" />
+			<a-form-item label="阿里云区域ID：" name="SUPPORT_EMAIL_ALIYUN_REGION_ID">
+				<a-input v-model:value="formData.SUPPORT_EMAIL_ALIYUN_REGION_ID" placeholder="请输入阿里云区域ID" />
 			</a-form-item>
 			<a-form-item>
 				<a-button type="primary" :loading="submitLoading" @click="onSubmit()">保存</a-button>
@@ -53,9 +53,9 @@
 
 	// 默认要校验的
 	const formRules = {
-		SNOWY_EMAIL_ALIYUN_ACCESS_KEY_ID: [required('请输入阿里云密钥ID')],
-		SNOWY_EMAIL_ALIYUN_ACCESS_KEY_SECRET: [required('请输入阿里云密钥SECRET')],
-		SNOWY_EMAIL_ALIYUN_REGION_ID: [required('请输入阿里云区域ID')]
+		SUPPORT_EMAIL_ALIYUN_ACCESS_KEY_ID: [required('请输入阿里云密钥ID')],
+		SUPPORT_EMAIL_ALIYUN_ACCESS_KEY_SECRET: [required('请输入阿里云密钥SECRET')],
+		SUPPORT_EMAIL_ALIYUN_REGION_ID: [required('请输入阿里云区域ID')]
 	}
 	// 验证并提交数据
 	const onSubmit = () => {

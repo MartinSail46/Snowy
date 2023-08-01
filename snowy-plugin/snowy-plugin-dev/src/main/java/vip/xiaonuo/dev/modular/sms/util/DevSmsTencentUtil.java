@@ -1,15 +1,3 @@
-/*
- * Copyright [2022] [https://www.xiaonuo.vip]
- *
- * Snowy采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Snowy源码头部的版权声明。
- * 3.本项目代码可免费商业使用，商业使用请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://www.xiaonuo.vip
- * 5.不可二次分发开源参与同类竞品，如有想法可联系团队xiaonuobase@qq.com商议合作。
- * 6.若您的项目无法满足以上几点，需要更多功能代码，获取Snowy商业授权许可，请在官网购买授权，地址为 https://www.xiaonuo.vip
- */
 package vip.xiaonuo.dev.modular.sms.util;
 
 import cn.hutool.core.util.ObjectUtil;
@@ -37,11 +25,11 @@ public class DevSmsTencentUtil {
 
     private static SmsClient client;
 
-    private static final String SNOWY_SMS_TENCENT_SECRET_ID_KEY = "SNOWY_SMS_TENCENT_SECRET_ID";
-    private static final String SNOWY_SMS_TENCENT_SECRET_KEY_KEY = "SNOWY_SMS_TENCENT_SECRET_KEY";
-    private static final String SNOWY_SMS_TENCENT_REGION_ID_KEY = "SNOWY_SMS_TENCENT_REGION_ID";
-    private static final String SNOWY_SMS_TENCENT_DEFAULT_SDK_APP_ID_KEY = "SNOWY_SMS_TENCENT_DEFAULT_SDK_APP_ID";
-    private static final String SNOWY_SMS_TENCENT_DEFAULT_SIGN_NAME_KEY = "SNOWY_SMS_TENCENT_DEFAULT_SIGN_NAME";
+    private static final String SUPPORT_SMS_TENCENT_SECRET_ID_KEY = "SUPPORT_SMS_TENCENT_SECRET_ID";
+    private static final String SUPPORT_SMS_TENCENT_SECRET_KEY_KEY = "SUPPORT_SMS_TENCENT_SECRET_KEY";
+    private static final String SUPPORT_SMS_TENCENT_REGION_ID_KEY = "SUPPORT_SMS_TENCENT_REGION_ID";
+    private static final String SUPPORT_SMS_TENCENT_DEFAULT_SDK_APP_ID_KEY = "SUPPORT_SMS_TENCENT_DEFAULT_SDK_APP_ID";
+    private static final String SUPPORT_SMS_TENCENT_DEFAULT_SIGN_NAME_KEY = "SUPPORT_SMS_TENCENT_DEFAULT_SIGN_NAME";
 
     /**
      * 初始化操作的客户端
@@ -54,21 +42,21 @@ public class DevSmsTencentUtil {
         DevConfigApi devConfigApi = SpringUtil.getBean(DevConfigApi.class);
 
         /* secretId */
-        String secretId = devConfigApi.getValueByKey(SNOWY_SMS_TENCENT_SECRET_ID_KEY);
+        String secretId = devConfigApi.getValueByKey(SUPPORT_SMS_TENCENT_SECRET_ID_KEY);
 
         if(ObjectUtil.isEmpty(secretId)) {
             throw new CommonException("腾讯云短信操作客户端未正确配置：secretId为空");
         }
 
         /* secretKey */
-        String secretKey = devConfigApi.getValueByKey(SNOWY_SMS_TENCENT_SECRET_KEY_KEY);
+        String secretKey = devConfigApi.getValueByKey(SUPPORT_SMS_TENCENT_SECRET_KEY_KEY);
 
         if(ObjectUtil.isEmpty(secretKey)) {
             throw new CommonException("腾讯云短信操作客户端未正确配置：secretKey为空");
         }
 
         /* regionId */
-        String regionId = devConfigApi.getValueByKey(SNOWY_SMS_TENCENT_REGION_ID_KEY);
+        String regionId = devConfigApi.getValueByKey(SUPPORT_SMS_TENCENT_REGION_ID_KEY);
 
         if(ObjectUtil.isEmpty(regionId)) {
             throw new CommonException("腾讯云短信操作客户端未正确配置：regionId为空");
@@ -97,7 +85,7 @@ public class DevSmsTencentUtil {
             if(ObjectUtil.isEmpty(sdkAppId)) {
                 // sdkAppId为空，则获取默认sdkAppId
                 DevConfigApi devConfigApi = SpringUtil.getBean(DevConfigApi.class);
-                signName = devConfigApi.getValueByKey(SNOWY_SMS_TENCENT_DEFAULT_SDK_APP_ID_KEY);
+                signName = devConfigApi.getValueByKey(SUPPORT_SMS_TENCENT_DEFAULT_SDK_APP_ID_KEY);
                 if(ObjectUtil.isEmpty(signName)) {
                     throw new CommonException("腾讯云短信操作客户端未正确配置：sdkAppId为空");
                 }
@@ -105,7 +93,7 @@ public class DevSmsTencentUtil {
             if(ObjectUtil.isEmpty(signName)) {
                 // 签名为空，则获取默认签名
                 DevConfigApi devConfigApi = SpringUtil.getBean(DevConfigApi.class);
-                signName = devConfigApi.getValueByKey(SNOWY_SMS_TENCENT_DEFAULT_SIGN_NAME_KEY);
+                signName = devConfigApi.getValueByKey(SUPPORT_SMS_TENCENT_DEFAULT_SIGN_NAME_KEY);
                 if(ObjectUtil.isEmpty(signName)) {
                     throw new CommonException("腾讯云短信操作客户端未正确配置：signName为空");
                 }

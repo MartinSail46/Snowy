@@ -55,7 +55,7 @@
 					const indexMenu = menu[0].children[0].path
 					tool.data.set('MENU', menu)
 					// 重置系统默认应用
-					tool.data.set('SNOWY_MENU_MODULE_ID', menu[0].id)
+					tool.data.set('SUPPORT_MENU_MODULE_ID', menu[0].id)
 					router.replace({
 						path: indexMenu
 					})

@@ -3,9 +3,9 @@
 		<a-form ref="formRef" :model="formData" :rules="formRules" layout="vertical" :label-col="labelCol">
 			<a-row :gutter="16">
 				<a-col :span="3">
-					<a-form-item label="系统LOGO：" name="SNOWY_SYS_LOGO">
+					<a-form-item label="系统LOGO：" name="SUPPORT_SYS_LOGO">
 						<a-upload
-							v-model:file-list="formData.SNOWY_SYS_LOGO"
+							v-model:file-list="formData.SUPPORT_SYS_LOGO"
 							class="avatar-uploader"
 							list-type="picture-card"
 							:show-upload-list="false"
@@ -23,40 +23,40 @@
 			</a-row>
 			<a-row :gutter="16">
 				<a-col :span="8">
-					<a-form-item label="系统名称：" name="SNOWY_SYS_NAME">
-						<a-input v-model:value="formData.SNOWY_SYS_NAME" placeholder="请输入系统名称" />
+					<a-form-item label="系统名称：" name="SUPPORT_SYS_NAME">
+						<a-input v-model:value="formData.SUPPORT_SYS_NAME" placeholder="请输入系统名称" />
 					</a-form-item>
 				</a-col>
 				<a-col :span="8">
-					<a-form-item label="系统版本：" name="SNOWY_SYS_VERSION">
-						<a-input v-model:value="formData.SNOWY_SYS_VERSION" placeholder="请输入系统版本" />
+					<a-form-item label="系统版本：" name="SUPPORT_SYS_VERSION">
+						<a-input v-model:value="formData.SUPPORT_SYS_VERSION" placeholder="请输入系统版本" />
 					</a-form-item>
 				</a-col>
 				<a-col :span="8">
-					<a-form-item label="版权信息：" name="SNOWY_SYS_COPYRIGHT">
-						<a-input v-model:value="formData.SNOWY_SYS_COPYRIGHT" placeholder="请输入版权信息" />
+					<a-form-item label="版权信息：" name="SUPPORT_SYS_COPYRIGHT">
+						<a-input v-model:value="formData.SUPPORT_SYS_COPYRIGHT" placeholder="请输入版权信息" />
 					</a-form-item>
 				</a-col>
 			</a-row>
 			<a-row :gutter="16">
 				<a-col :span="8">
-					<a-form-item label="版权链接URL：" name="SNOWY_SYS_COPYRIGHT_URL">
-						<a-input v-model:value="formData.SNOWY_SYS_COPYRIGHT_URL" placeholder="请输入版权链接URL" />
+					<a-form-item label="版权链接URL：" name="SUPPORT_SYS_COPYRIGHT_URL">
+						<a-input v-model:value="formData.SUPPORT_SYS_COPYRIGHT_URL" placeholder="请输入版权链接URL" />
 					</a-form-item>
 				</a-col>
 				<a-col :span="8">
-					<a-form-item label="验证码开关：" name="SNOWY_SYS_DEFAULT_CAPTCHA_OPEN">
+					<a-form-item label="验证码开关：" name="SUPPORT_SYS_DEFAULT_CAPTCHA_OPEN">
 						<a-radio-group
-							v-model:value="formData.SNOWY_SYS_DEFAULT_CAPTCHA_OPEN"
+							v-model:value="formData.SUPPORT_SYS_DEFAULT_CAPTCHA_OPEN"
 							:options="commonSwitchOptions"
 							placeholder="请选择验证码开关"
 						></a-radio-group>
 					</a-form-item>
 				</a-col>
 				<a-col :span="8">
-					<a-form-item label="默认文件引擎：" name="SNOWY_SYS_DEFAULT_FILE_ENGINE">
+					<a-form-item label="默认文件引擎：" name="SUPPORT_SYS_DEFAULT_FILE_ENGINE">
 						<a-radio-group
-							v-model:value="formData.SNOWY_SYS_DEFAULT_FILE_ENGINE"
+							v-model:value="formData.SUPPORT_SYS_DEFAULT_FILE_ENGINE"
 							:options="fileEngineOptions"
 							placeholder="请选择系统默认文件引擎"
 						></a-radio-group>
@@ -65,19 +65,19 @@
 			</a-row>
 			<a-row :gutter="16">
 				<a-col :span="8">
-					<a-form-item label="默认快捷方式：" name="SNOWY_SYS_DEFAULT_WORKBENCH_DATA">
+					<a-form-item label="默认快捷方式：" name="SUPPORT_SYS_DEFAULT_WORKBENCH_DATA">
 						<menuTreeSelect ref="menuTreeSelectRef" :resultData="true" />
 					</a-form-item>
 				</a-col>
 				<a-col :span="8">
-					<a-form-item label="系统默认密码：" name="SNOWY_SYS_DEFAULT_PASSWORD">
-						<a-input v-model:value="formData.SNOWY_SYS_DEFAULT_PASSWORD" placeholder="请输入系统默认密码" />
+					<a-form-item label="系统默认密码：" name="SUPPORT_SYS_DEFAULT_PASSWORD">
+						<a-input v-model:value="formData.SUPPORT_SYS_DEFAULT_PASSWORD" placeholder="请输入系统默认密码" />
 					</a-form-item>
 				</a-col>
 				<a-col :span="8">
-					<a-form-item label="系统描述：" name="SNOWY_SYS_DEFAULT_DESCRRIPTION">
+					<a-form-item label="系统描述：" name="SUPPORT_SYS_DEFAULT_DESCRRIPTION">
 						<a-textarea
-							v-model:value="formData.SNOWY_SYS_DEFAULT_DESCRRIPTION"
+							v-model:value="formData.SUPPORT_SYS_DEFAULT_DESCRRIPTION"
 							placeholder="请输入系统描述"
 							:auto-size="{ minRows: 3, maxRows: 6 }"
 						/>
@@ -122,11 +122,11 @@
 		if (data) {
 			data.forEach((item) => {
 				// 如果是系统的logo，它这个组件要一个数组，我将其单独处理
-				if (item.configKey === 'SNOWY_SYS_LOGO') {
+				if (item.configKey === 'SUPPORT_SYS_LOGO') {
 					formData.value[item.configKey] = [item.configValue]
 					// 让其回显
 					imageUrl.value = item.configValue
-				} else if (item.configKey === 'SNOWY_SYS_DEFAULT_WORKBENCH_DATA') {
+				} else if (item.configKey === 'SUPPORT_SYS_DEFAULT_WORKBENCH_DATA') {
 					try {
 						menuTreeSelectRef.value.setSelectData(JSON.parse(item.configValue).shortcut)
 						// eslint-disable-next-line no-empty
@@ -145,11 +145,11 @@
 	const commonSwitchOptions = tool.dictList('COMMON_SWITCH')
 
 	const customRequest = (data) => {
-		formData.value.SNOWY_SYS_LOGO = ref([])
+		formData.value.SUPPORT_SYS_LOGO = ref([])
 		getBase64(data.file)
 			.then((res) => {
 				imageUrl.value = res
-				formData.value.SNOWY_SYS_LOGO.push(res)
+				formData.value.SUPPORT_SYS_LOGO.push(res)
 			})
 			.catch((err) => {})
 	}
@@ -169,14 +169,14 @@
 
 	// 默认要校验的
 	const formRules = {
-		SNOWY_SYS_LOGO: [required('请上传系统LOGO')],
-		SNOWY_SYS_NAME: [required('请输入系统名称')],
-		SNOWY_SYS_VERSION: [required('请输入系统版本')],
-		SNOWY_SYS_COPYRIGHT: [required('请输入版权信息')],
-		SNOWY_SYS_COPYRIGHT_URL: [required('请输入版权链接URL')],
-		SNOWY_SYS_DEFAULT_FILE_ENGINE: [required('请选择系统默认文件引擎')],
-		SNOWY_SYS_DEFAULT_CAPTCHA_OPEN: [required('请选择系统验证码开关')],
-		SNOWY_SYS_DEFAULT_PASSWORD: [required('请输入系统重置密码默认密码')]
+		SUPPORT_SYS_LOGO: [required('请上传系统LOGO')],
+		SUPPORT_SYS_NAME: [required('请输入系统名称')],
+		SUPPORT_SYS_VERSION: [required('请输入系统版本')],
+		SUPPORT_SYS_COPYRIGHT: [required('请输入版权信息')],
+		SUPPORT_SYS_COPYRIGHT_URL: [required('请输入版权链接URL')],
+		SUPPORT_SYS_DEFAULT_FILE_ENGINE: [required('请选择系统默认文件引擎')],
+		SUPPORT_SYS_DEFAULT_CAPTCHA_OPEN: [required('请选择系统验证码开关')],
+		SUPPORT_SYS_DEFAULT_PASSWORD: [required('请输入系统重置密码默认密码')]
 	}
 	// 表单固定label实现
 	const labelCol = ref({
@@ -191,7 +191,7 @@
 			.then(() => {
 				submitLoading.value = true
 				let submitParam = cloneDeep(formData.value)
-				submitParam.SNOWY_SYS_LOGO = submitParam.SNOWY_SYS_LOGO[0]
+				submitParam.SUPPORT_SYS_LOGO = submitParam.SUPPORT_SYS_LOGO[0]
 				const param = Object.entries(submitParam).map((item) => {
 					return {
 						configKey: item[0],
@@ -203,7 +203,7 @@
 					shortcut: menuTreeSelectRef.value.getSelectData()
 				}
 				param.push({
-					configKey: 'SNOWY_SYS_DEFAULT_WORKBENCH_DATA',
+					configKey: 'SUPPORT_SYS_DEFAULT_WORKBENCH_DATA',
 					configValue: JSON.stringify(shortcut)
 				})
 				configApi
@@ -219,8 +219,8 @@
 	const resetForm = () => {
 		imageUrl.value = ''
 		formData.value = {
-			SNOWY_SYS_DEFAULT_CAPTCHA_OPEN: 'true',
-			SNOWY_SYS_DEFAULT_FILE_ENGINE: 'LOCAL'
+			SUPPORT_SYS_DEFAULT_CAPTCHA_OPEN: 'true',
+			SUPPORT_SYS_DEFAULT_FILE_ENGINE: 'LOCAL'
 		}
 	}
 </script>

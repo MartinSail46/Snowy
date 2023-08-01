@@ -22,7 +22,7 @@
 						<template #icon><SearchOutlined /></template>
 						查询
 					</a-button>
-					<a-button class="snowy-buttom-left" @click="reset">
+					<a-button class="support-buttom-left" @click="reset">
 						<template #icon><redo-outlined /></template>
 						重置
 					</a-button>
@@ -170,7 +170,7 @@
 	.primaryAdd {
 		margin-right: 10px;
 	}
-	.snowy-buttom-left {
+	.support-buttom-left {
 		margin-left: 8px;
 	}
 </style>

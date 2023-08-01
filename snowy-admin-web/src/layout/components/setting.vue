@@ -2,26 +2,26 @@
 	<div class="setting-drawer-index-content">
 		<div class="scrollbar">
 			<h3>整体风格设置</h3>
-			<div class="snowy-setting-checkbox">
+			<div class="support-setting-checkbox">
 				<a-tooltip v-for="(a, i) in sideStyleList" :key="i" placement="top">
 					<template #title>
 						<span>{{ a.tips }}</span>
 					</template>
-					<div :class="['snowy-setting-checkbox-item', a.style]" @click="setSideStyle(a.value)">
-						<check-outlined v-if="theme === a.value" class="snowy-setting-checkbox-item-select-icon" />
+					<div :class="['support-setting-checkbox-item', a.style]" @click="setSideStyle(a.value)">
+						<check-outlined v-if="theme === a.value" class="support-setting-checkbox-item-select-icon" />
 					</div>
 				</a-tooltip>
 			</div>
 			<h3>整体界面布局</h3>
-			<div class="snowy-setting-checkbox">
+			<div class="support-setting-checkbox">
 				<a-tooltip v-for="(a, i) in layoutList" :key="i" placement="top">
 					<template #title>
 						<span>{{ a.tips }}</span>
 					</template>
 
-					<div :class="['snowy-setting-checkbox-item', a.style]" @click="layoutStyle(a.value)">
-						<div class="snowy-setting-layout-menu-doublerow-inner" />
-						<check-outlined v-if="layout === a.value" class="snowy-setting-checkbox-item-select-icon" />
+					<div :class="['support-setting-checkbox-item', a.style]" @click="layoutStyle(a.value)">
+						<div class="support-setting-layout-menu-doublerow-inner" />
+						<check-outlined v-if="layout === a.value" class="support-setting-checkbox-item-select-icon" />
 					</div>
 				</a-tooltip>
 			</div>
@@ -29,7 +29,7 @@
 			<div class="mb-4">
 				<h3>主题色</h3>
 				<div class="h-[50px]">
-					<a-tooltip v-for="(item, index) in colorList" :key="index" class="snowy-setting-theme-color-colorBlock">
+					<a-tooltip v-for="(item, index) in colorList" :key="index" class="support-setting-theme-color-colorBlock">
 						<template #title>
 							<span>{{ item.key }}</span>
 						</template>
@@ -110,29 +110,29 @@
 					{
 						tips: '暗色主题风格',
 						value: ThemeModeEnum.DARK,
-						style: 'snowy-setting-checkbox-item-dark'
+						style: 'support-setting-checkbox-item-dark'
 					},
 					{
 						tips: '亮色主题风格',
 						value: ThemeModeEnum.LIGHT,
-						style: 'snowy-setting-checkbox-item-light'
+						style: 'support-setting-checkbox-item-light'
 					},
 					{
 						tips: '暗黑模式',
 						value: ThemeModeEnum.REAL_DARK,
-						style: 'snowy-setting-checkbox-item-realdark'
+						style: 'support-setting-checkbox-item-realdark'
 					}
 				],
 				layoutList: [
 					{
 						tips: '经典',
 						value: 'classical',
-						style: 'snowy-setting-layout-menu-classical'
+						style: 'support-setting-layout-menu-classical'
 					},
 					{
 						tips: '双排菜单',
 						value: 'doublerow',
-						style: 'snowy-setting-layout-menu-doublerow'
+						style: 'support-setting-layout-menu-doublerow'
 					}
 				],
 				xnFormStyleOptions: [
@@ -170,7 +170,7 @@
 				this.toggleState('topHanderThemeColorOpen')
 				if (!this.topHanderThemeColorOpen) {
 					this.globalStore.topHanderThemeColorSpread = false
-					tool.data.set('SNOWY_TOP_HANDER_THEME_COLOR_SPREAD', false)
+					tool.data.set('SUPPORT_TOP_HANDER_THEME_COLOR_SPREAD', false)
 				}
 			},
 			changeTopHanderThemeColorSpread() {
@@ -179,26 +179,26 @@
 			toggleState(stateName) {
 				this.globalStore.toggleConfig(stateName)
 				const toolDataName = toolDataNameMap[stateName]
-				tool.data.set(`SNOWY_${toolDataName}`, this.globalStore[stateName])
+				tool.data.set(`SUPPORT_${toolDataName}`, this.globalStore[stateName])
 			},
 			// 设置整体风格主题
 			setSideStyle(value) {
 				this.globalStore.setTheme(value)
-				tool.data.set('SNOWY_THEME', value)
+				tool.data.set('SUPPORT_THEME', value)
 			},
 			// 设置整体界面布局
 			layoutStyle(value) {
 				this.globalStore.setLayout(value)
-				tool.data.set('SNOWY_LAYOUT', value)
+				tool.data.set('SUPPORT_LAYOUT', value)
 			},
 			// 切换颜色
 			tagColor(value) {
-				tool.data.set('SNOWY_THEME_COLOR', value)
+				tool.data.set('SUPPORT_THEME_COLOR', value)
 				this.globalStore.setThemeColor(value)
 			},
 			// 切换表单风格
 			formStyleChange(value) {
-				tool.data.set('SNOWY_FORM_STYLE', value)
+				tool.data.set('SUPPORT_FORM_STYLE', value)
 				this.globalStore.setFormStyle(value)
 			}
 		}
@@ -206,11 +206,11 @@
 </script>
 
 <style type="less" scoped>
-	.snowy-setting-checkbox {
+	.support-setting-checkbox {
 		display: flex;
 		margin-bottom: 20px;
 	}
-	.snowy-setting-checkbox-item {
+	.support-setting-checkbox-item {
 		position: relative;
 		width: 44px;
 		height: 36px;
@@ -221,7 +221,7 @@
 		box-shadow: 0 1px 2.5px 0 rgb(0 0 0 / 18%);
 		cursor: pointer;
 	}
-	.snowy-setting-checkbox-item::before {
+	.support-setting-checkbox-item::before {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -230,7 +230,7 @@
 		background-color: #fff;
 		content: '';
 	}
-	.snowy-setting-checkbox-item::after {
+	.support-setting-checkbox-item::after {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -239,28 +239,28 @@
 		background-color: #fff;
 		content: '';
 	}
-	.snowy-setting-checkbox-item-light {
+	.support-setting-checkbox-item-light {
 		background-color: #ebeef1;
 		content: '';
 	}
-	.snowy-setting-checkbox-item-light::before {
+	.support-setting-checkbox-item-light::before {
 		background-color: #fff;
 		content: '';
 	}
-	.snowy-setting-checkbox-item-light::after {
+	.support-setting-checkbox-item-light::after {
 		background-color: #fff;
 	}
-	.snowy-setting-checkbox-item-dark {
+	.support-setting-checkbox-item-dark {
 		z-index: 1;
 		background-color: #ebeef1;
 		content: '';
 	}
-	.snowy-setting-checkbox-item-dark::before {
+	.support-setting-checkbox-item-dark::before {
 		z-index: 1;
 		background-color: #001529;
 		content: '';
 	}
-	.snowy-setting-checkbox-item-dark::after {
+	.support-setting-checkbox-item-dark::after {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -269,18 +269,18 @@
 		background-color: #fff;
 		content: '';
 	}
-	.snowy-setting-checkbox-item-realdark {
+	.support-setting-checkbox-item-realdark {
 		background-color: rgba(0, 21, 41, 0.85);
 	}
-	.snowy-setting-checkbox-item-realdark::before {
+	.support-setting-checkbox-item-realdark::before {
 		z-index: 1;
 		background-color: rgba(0, 21, 41, 0.65);
 		content: '';
 	}
-	.snowy-setting-checkbox-item-realdark::after {
+	.support-setting-checkbox-item-realdark::after {
 		background-color: rgba(0, 21, 41, 0.85);
 	}
-	.snowy-setting-checkbox-item-select-icon {
+	.support-setting-checkbox-item-select-icon {
 		position: absolute;
 		right: 8px;
 		bottom: 8px;
@@ -290,7 +290,7 @@
 		pointer-events: none;
 	}
 
-	.snowy-setting-theme-color-colorBlock {
+	.support-setting-theme-color-colorBlock {
 		margin-top: 8px;
 		width: 20px;
 		height: 20px;
@@ -305,18 +305,18 @@
 		font-weight: 700;
 	}
 
-	.snowy-setting-layout-menu-doublerow {
+	.support-setting-layout-menu-doublerow {
 		z-index: 1;
 		background-color: #ebeef1;
 		content: '';
 	}
-	.snowy-setting-layout-menu-doublerow::before {
+	.support-setting-layout-menu-doublerow::before {
 		z-index: 1;
 		width: 16%;
 		background-color: #001529;
 		content: '';
 	}
-	.snowy-setting-layout-menu-doublerow-inner {
+	.support-setting-layout-menu-doublerow-inner {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -326,7 +326,7 @@
 		background-color: #fff;
 		content: '';
 	}
-	.snowy-setting-layout-menu-doublerow::after {
+	.support-setting-layout-menu-doublerow::after {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -335,17 +335,17 @@
 		background-color: #fff;
 		content: '';
 	}
-	.snowy-setting-layout-menu-classical {
+	.support-setting-layout-menu-classical {
 		z-index: 1;
 		background-color: #ebeef1;
 		content: '';
 	}
-	.snowy-setting-layout-menu-classical::before {
+	.support-setting-layout-menu-classical::before {
 		z-index: 1;
 		background-color: #001529;
 		content: '';
 	}
-	.snowy-setting-layout-menu-classical::after {
+	.support-setting-layout-menu-classical::after {
 		position: absolute;
 		top: 0;
 		left: 0;

@@ -8,20 +8,20 @@
 			:label-col="{ ...layout.labelCol, offset: 0 }"
 			:wrapper-col="{ ...layout.wrapperCol, offset: 0 }"
 		>
-			<a-form-item label="腾讯云密钥ID：" name="SNOWY_SMS_TENCENT_SECRET_ID">
-				<a-input v-model:value="formData.SNOWY_SMS_TENCENT_SECRET_ID" placeholder="请输入腾讯云密钥ID" />
+			<a-form-item label="腾讯云密钥ID：" name="SUPPORT_SMS_TENCENT_SECRET_ID">
+				<a-input v-model:value="formData.SUPPORT_SMS_TENCENT_SECRET_ID" placeholder="请输入腾讯云密钥ID" />
 			</a-form-item>
-			<a-form-item label="腾讯云密钥SECRET：" name="SNOWY_SMS_TENCENT_SECRET_KEY">
-				<a-input v-model:value="formData.SNOWY_SMS_TENCENT_SECRET_KEY" placeholder="请输入腾讯云密钥SECRET" />
+			<a-form-item label="腾讯云密钥SECRET：" name="SUPPORT_SMS_TENCENT_SECRET_KEY">
+				<a-input v-model:value="formData.SUPPORT_SMS_TENCENT_SECRET_KEY" placeholder="请输入腾讯云密钥SECRET" />
 			</a-form-item>
-			<a-form-item label="腾讯云区域ID：" name="SNOWY_SMS_TENCENT_REGION_ID">
-				<a-input v-model:value="formData.SNOWY_SMS_TENCENT_REGION_ID" placeholder="请输入腾讯云区域ID" />
+			<a-form-item label="腾讯云区域ID：" name="SUPPORT_SMS_TENCENT_REGION_ID">
+				<a-input v-model:value="formData.SUPPORT_SMS_TENCENT_REGION_ID" placeholder="请输入腾讯云区域ID" />
 			</a-form-item>
-			<a-form-item label="腾讯云应用ID：" name="SNOWY_SMS_TENCENT_DEFAULT_SDK_APP_ID">
-				<a-input v-model:value="formData.SNOWY_SMS_TENCENT_DEFAULT_SDK_APP_ID" placeholder="请输入腾讯云应用ID" />
+			<a-form-item label="腾讯云应用ID：" name="SUPPORT_SMS_TENCENT_DEFAULT_SDK_APP_ID">
+				<a-input v-model:value="formData.SUPPORT_SMS_TENCENT_DEFAULT_SDK_APP_ID" placeholder="请输入腾讯云应用ID" />
 			</a-form-item>
-			<a-form-item label="腾讯云短信签名：" name="SNOWY_SMS_TENCENT_DEFAULT_SIGN_NAME">
-				<a-input v-model:value="formData.SNOWY_SMS_TENCENT_DEFAULT_SIGN_NAME" placeholder="请输入腾讯云短信签名" />
+			<a-form-item label="腾讯云短信签名：" name="SUPPORT_SMS_TENCENT_DEFAULT_SIGN_NAME">
+				<a-input v-model:value="formData.SUPPORT_SMS_TENCENT_DEFAULT_SIGN_NAME" placeholder="请输入腾讯云短信签名" />
 			</a-form-item>
 			<a-form-item>
 				<a-button type="primary" :loading="submitLoading" @click="onSubmit()">保存</a-button>
@@ -59,11 +59,11 @@
 
 	// 默认要校验的
 	const formRules = {
-		SNOWY_SMS_TENCENT_SECRET_ID: [required('请输入腾讯云密钥ID')],
-		SNOWY_SMS_TENCENT_SECRET_KEY: [required('请输入腾讯云密钥SECRET')],
-		SNOWY_SMS_TENCENT_REGION_ID: [required('请输入腾讯云区域ID')],
-		SNOWY_SMS_TENCENT_DEFAULT_SDK_APP_ID: [required('请输入腾讯云应用ID')],
-		SNOWY_SMS_TENCENT_DEFAULT_SIGN_NAME: [required('请输入腾讯云短信签名')]
+		SUPPORT_SMS_TENCENT_SECRET_ID: [required('请输入腾讯云密钥ID')],
+		SUPPORT_SMS_TENCENT_SECRET_KEY: [required('请输入腾讯云密钥SECRET')],
+		SUPPORT_SMS_TENCENT_REGION_ID: [required('请输入腾讯云区域ID')],
+		SUPPORT_SMS_TENCENT_DEFAULT_SDK_APP_ID: [required('请输入腾讯云应用ID')],
+		SUPPORT_SMS_TENCENT_DEFAULT_SIGN_NAME: [required('请输入腾讯云短信签名')]
 	}
 	// 验证并提交数据
 	const onSubmit = () => {

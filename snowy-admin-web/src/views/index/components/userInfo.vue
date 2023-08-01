@@ -7,7 +7,7 @@
 					:src="userInfo.avatar"
 					:size="{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }"
 				/>
-				<div class="snowy-index-card-left-one-username">
+				<div class="support-index-card-left-one-username">
 					<span style="font-weight: 600; margin: 2px; font-size: 18px">{{ userInfo.name }}</span>
 					<span style="color: #6d737b; margin: 2px">{{ userInfo.orgName }} | {{ userInfo.positionName }}</span>
 				</div>
@@ -37,7 +37,7 @@
 </script>
 
 <style scoped>
-	.snowy-index-card-left-one-username {
+	.support-index-card-left-one-username {
 		margin-left: 8px;
 		display: flex;
 		flex-direction: column;

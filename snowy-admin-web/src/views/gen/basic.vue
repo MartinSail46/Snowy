@@ -274,7 +274,7 @@
 					})
 			} else {
 				formData.value = {
-					pluginName: 'snowy-plugin-biz',
+					pluginName: 'support-plugin-biz',
 					packageName: 'vip.xiaonuo',
 					moduleName: 'biz',
 					sortCode: 99,

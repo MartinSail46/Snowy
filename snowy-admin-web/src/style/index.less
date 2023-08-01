@@ -70,14 +70,14 @@ a, button, input, textarea {
 }
 
 /* 双排菜单布局 */
-.snowy-doublerow-layout-menu {
+.support-doublerow-layout-menu {
 	padding-left: 5px;
 	padding-right: 5px;
 	line-height: 0;
 	align-items: center;
 }
 
-.snowy-doublerow-layout-menu-item-fort-div {
+.support-doublerow-layout-menu-item-fort-div {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	opacity: 1;
@@ -85,12 +85,12 @@ a, button, input, textarea {
 	flex: auto;
 }
 
-.snowy-doublerow-layout-menu-item-fort-div-span {
+.support-doublerow-layout-menu-item-fort-div-span {
 	font-size: 12px;
 	text-overflow: ellipsis;
 }
 
-.snowy-doublerow-side-top {
+.support-doublerow-side-top {
 	border-bottom: 1px solid var(--border-color-split);
 	height: 50px;
 	line-height: 50px;
@@ -99,14 +99,14 @@ a, button, input, textarea {
 }
 
 // 应用主题色
-.snowy-doublerow-side-top-primary-color {
+.support-doublerow-side-top-primary-color {
 	background-color: var(--primary-color);
-	.snowy-title {
+	.support-title {
 		color: white;
 	}
 }
 
-.snowy-title{
+.support-title{
 	color: var(--text-color);
 }
 .ant-layout-sider-collapsed{
@@ -115,7 +115,7 @@ a, button, input, textarea {
 	}
 }
 .ant-layout-sider-dark{
-	.snowy-header-logo{
+	.support-header-logo{
 		color: #fff;
 	}
 }
@@ -143,7 +143,7 @@ a, button, input, textarea {
 }
 
 /* 头部 */
-.snowy-header {
+.support-header {
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
@@ -157,7 +157,7 @@ a, button, input, textarea {
 	}
 }
 // 应用主题色
-.snowy-header-primary-color {
+.support-header-primary-color {
 	color: white;
 	background-color: var(--primary-color);
 	.ant-badge{
@@ -176,46 +176,46 @@ a, button, input, textarea {
 }
 
 .ant-layout-sider-dark {
-	.snowy-title{
+	.support-title{
 		color: #fff;
 	}
 }
 
-.snowy-header-left {
+.support-header-left {
 	display: flex;
 	align-items: center;
 	padding-left: 20px;
 }
 
-.snowy-header-left .menu-unfold-outlined {
+.support-header-left .menu-unfold-outlined {
 	padding: 0 12px
 }
 
-.snowy-header-right {
+.support-header-right {
 	display: flex;
 	align-items: center;
 }
 
-.snowy-header-logo {
+.support-header-logo {
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
-.snowy-header-logo-primary-color {
+.support-header-logo-primary-color {
 	color: white;
 	background-color: var(--primary-color);
 }
 
-.snowy-header-logo .logo-bar {
+.support-header-logo .logo-bar {
 	font-weight: bold;
 	display: flex;
 	align-items: center;
 	font-size: 20px;
 }
 
-.snowy-header-logo .logo-bar .logo {
+.support-header-logo .logo-bar .logo {
 	margin-right: 10px;
 	width: 35px;
 	height: 35px;
@@ -248,18 +248,18 @@ a, button, input, textarea {
 }
 
 /* 多标签 */
-.snowy-tags {
+.support-tags {
 	height: 40px;
 	background: var(--component-background);
 }
 
-.snowy-tags ul {
+.support-tags ul {
 	display: flex;
 	overflow: hidden;
 	padding-left: 0;
 }
 
-.snowy-tags li {
+.support-tags li {
 	cursor: pointer;
 	display: inline-block;
 	float: left;
@@ -268,7 +268,7 @@ a, button, input, textarea {
 	flex-shrink: 0;
 }
 
-.snowy-tags li::after {
+.support-tags li::after {
 	content: " ";
 	width: 1px;
 	height: 100%;
@@ -277,7 +277,7 @@ a, button, input, textarea {
 	background-image: linear-gradient(#fff, #e6e6e6);
 }
 
-.snowy-tags li a {
+.support-tags li a {
 	padding: 0 10px;
 	width: 100%;
 	height: 100%;
@@ -286,7 +286,7 @@ a, button, input, textarea {
 	align-items: center;
 }
 
-.snowy-tags li i {
+.support-tags li i {
 	margin-left: 10px;
 	border-radius: 3px;
 	width: 18px;
@@ -296,28 +296,28 @@ a, button, input, textarea {
 	justify-content: center;
 }
 
-.snowy-tags li i:hover {
+.support-tags li i:hover {
 	background: rgba(0, 0, 0, .2);
 	color: @body-background;
 }
 
-.snowy-tags li:hover {
+.support-tags li:hover {
 	background: @body-background;
 }
 
-.snowy-tags li.active {
+.support-tags li.active {
 	background: @primary-color;
 }
 
-.snowy-tags li.active a {
+.support-tags li.active a {
 	color: #fff;
 }
 
-.snowy-tags li.sortable-ghost {
+.support-tags li.sortable-ghost {
 	opacity: 0;
 }
 
-.snowy-header-tags-right {
+.support-header-tags-right {
 	margin-right: 10px;
 }
 .contextmenu {
@@ -367,7 +367,7 @@ a, button, input, textarea {
 	.main-maximize-exit {
 		display: block;
 	}
-	.ant-layout-sider, .ant-layout-sider-dark, .layout-setting, .snowy-header {
+	.ant-layout-sider, .ant-layout-sider-dark, .layout-setting, .support-header {
 		display: none;
 	}
 }
@@ -453,7 +453,7 @@ body,
 .org-table,
 .pos-table,
 .poi-list,
-.snowy-orgpos-vis,
+.support-orgpos-vis,
 .index-message-list,
 .ant-picker-time-panel-column,
 .timeline-div,

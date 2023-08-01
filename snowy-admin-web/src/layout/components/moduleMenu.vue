@@ -66,10 +66,10 @@
 
 	const emit = defineEmits({ switchModule: null })
 	const menu = router.getMenu()
-	const selectedKeys = ref([tool.data.get('SNOWY_MENU_MODULE_ID')])
+	const selectedKeys = ref([tool.data.get('SUPPORT_MENU_MODULE_ID')])
 	const moduleClick = (id) => {
 		emit('switchModule', id)
-		tool.data.set('SNOWY_MENU_MODULE_ID', id)
+		tool.data.set('SUPPORT_MENU_MODULE_ID', id)
 		nextTick(() => {
 			setSelectedKeys()
 		})
@@ -95,7 +95,7 @@
 		// 顶部应用列表让显示出来默认的，不这么实现不会显示的，相信老俞
 		moduleBackColor.value
 			? (selectedKeys.value = new Array([]))
-			: (selectedKeys.value = [tool.data.get('SNOWY_MENU_MODULE_ID')])
+			: (selectedKeys.value = [tool.data.get('SUPPORT_MENU_MODULE_ID')])
 	}
 </script>
 

@@ -24,8 +24,8 @@
 				<a-card>
 					<div class="login-header">
 						<div class="logo">
-							<img :alt="sysBaseConfig.SNOWY_SYS_NAME" :src="sysBaseConfig.SNOWY_SYS_LOGO" />
-							<label>{{ sysBaseConfig.SNOWY_SYS_NAME }}</label>
+							<img :alt="sysBaseConfig.SUPPORT_SYS_NAME" :src="sysBaseConfig.SUPPORT_SYS_LOGO" />
+							<label>{{ sysBaseConfig.SUPPORT_SYS_NAME }}</label>
 						</div>
 						<!--<h2>{{ $t('login.signInTitle') }}</h2>-->
 					</div>
@@ -120,7 +120,7 @@
 		data() {
 			return {
 				activeKey: 'userAccount',
-				captchaOpen: config.SYS_BASE_CONFIG.SNOWY_SYS_DEFAULT_CAPTCHA_OPEN,
+				captchaOpen: config.SYS_BASE_CONFIG.SUPPORT_SYS_DEFAULT_CAPTCHA_OPEN,
 				validCodeBase64: '',
 				ruleForm: {
 					account: 'superAdmin',
@@ -174,8 +174,8 @@
 					data.forEach((item) => {
 						formData.value[item.configKey] = item.configValue
 					})
-					this.captchaOpen = formData.value.SNOWY_SYS_DEFAULT_CAPTCHA_OPEN
-					tool.data.set('SNOWY_SYS_BASE_CONFIG', formData.value)
+					this.captchaOpen = formData.value.SUPPORT_SYS_DEFAULT_CAPTCHA_OPEN
+					tool.data.set('SUPPORT_SYS_BASE_CONFIG', formData.value)
 					this.setSysBaseConfig(formData.value)
 					this.refreshSwitch()
 				}

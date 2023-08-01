@@ -39,7 +39,7 @@
 								<template #icon><SearchOutlined /></template>
 								{{ $t('common.searchButton') }}
 							</a-button>
-							<a-button class="snowy-buttom-left" @click="reset">
+							<a-button class="support-buttom-left" @click="reset">
 								<template #icon><redo-outlined /></template>
 								{{ $t('common.resetButton') }}
 							</a-button>
@@ -413,11 +413,11 @@
 	.ant-form-item {
 		margin-bottom: 0 !important;
 	}
-	.snowy-table-avatar {
+	.support-table-avatar {
 		margin-top: -10px;
 		margin-bottom: -10px;
 	}
-	.snowy-buttom-left {
+	.support-buttom-left {
 		margin-left: 8px;
 	}
 </style>

@@ -8,11 +8,11 @@
 			:label-col="{ ...layout.labelCol, offset: 0 }"
 			:wrapper-col="{ ...layout.wrapperCol, offset: 0 }"
 		>
-			<a-form-item label="WINDOWS存储位置：" name="SNOWY_FILE_LOCAL_FOLDER_FOR_WINDOWS">
-				<a-input v-model:value="formData.SNOWY_FILE_LOCAL_FOLDER_FOR_WINDOWS" placeholder="请输入WINDOWS存储位置" />
+			<a-form-item label="WINDOWS存储位置：" name="SUPPORT_FILE_LOCAL_FOLDER_FOR_WINDOWS">
+				<a-input v-model:value="formData.SUPPORT_FILE_LOCAL_FOLDER_FOR_WINDOWS" placeholder="请输入WINDOWS存储位置" />
 			</a-form-item>
-			<a-form-item label="LINUX存储位置：" name="SNOWY_FILE_LOCAL_FOLDER_FOR_UNIX">
-				<a-input v-model:value="formData.SNOWY_FILE_LOCAL_FOLDER_FOR_UNIX" placeholder="请输入LINUX存储位置" />
+			<a-form-item label="LINUX存储位置：" name="SUPPORT_FILE_LOCAL_FOLDER_FOR_UNIX">
+				<a-input v-model:value="formData.SUPPORT_FILE_LOCAL_FOLDER_FOR_UNIX" placeholder="请输入LINUX存储位置" />
 			</a-form-item>
 			<a-form-item>
 				<a-button type="primary" :loading="submitLoading" @click="onSubmit()">保存</a-button>
@@ -50,8 +50,8 @@
 
 	// 默认要校验的
 	const formRules = {
-		SNOWY_FILE_LOCAL_FOLDER_FOR_WINDOWS: [required('请输入WINDOWS存储位置')],
-		SNOWY_FILE_LOCAL_FOLDER_FOR_UNIX: [required('请输入LINUX存储位置')]
+		SUPPORT_FILE_LOCAL_FOLDER_FOR_WINDOWS: [required('请输入WINDOWS存储位置')],
+		SUPPORT_FILE_LOCAL_FOLDER_FOR_UNIX: [required('请输入LINUX存储位置')]
 	}
 	// 验证并提交数据
 	const onSubmit = () => {

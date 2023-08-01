@@ -3,11 +3,11 @@
 		<appstore-outlined style="font-size: 20px; color: white" />
 	</div>
 	<a-drawer v-model:visible="visible" :width="210" :closable="false" placement="left">
-		<header class="snowy-header-logo mobile-nav">
-			<div class="snowy-header-left">
+		<header class="support-header-logo mobile-nav">
+			<div class="support-header-left">
 				<div class="logo-bar">
-					<img class="logo" :src="sysBaseConfig.SNOWY_SYS_LOGO" />
-					<span>{{ sysBaseConfig.SNOWY_SYS_NAME }}</span>
+					<img class="logo" :src="sysBaseConfig.SUPPORT_SYS_LOGO" />
+					<span>{{ sysBaseConfig.SUPPORT_SYS_NAME }}</span>
 				</div>
 			</div>
 		</header>
