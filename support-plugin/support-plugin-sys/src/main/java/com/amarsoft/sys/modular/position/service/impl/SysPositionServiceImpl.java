@@ -28,7 +28,7 @@ import com.amarsoft.sys.modular.org.service.SysOrgService;
 import com.amarsoft.sys.modular.position.entity.SysPosition;
 import com.amarsoft.sys.modular.position.enums.SysPositionCategoryEnum;
 import com.amarsoft.sys.modular.position.mapper.SysPositionMapper;
-import vip.xiaonuo.sys.modular.position.param.*;
+import com.amarsoft.sys.modular.position.param.*;
 import com.amarsoft.sys.modular.position.service.SysPositionService;
 import com.amarsoft.sys.modular.user.entity.SysUser;
 import com.amarsoft.sys.modular.user.service.SysUserService;

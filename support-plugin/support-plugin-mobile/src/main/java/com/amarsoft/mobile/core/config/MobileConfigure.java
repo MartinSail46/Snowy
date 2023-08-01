@@ -48,7 +48,7 @@ public class MobileConfigure {
                 .groupName("移动端功能MOBILE")
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .apis(RequestHandlerSelectors.basePackage("vip.xiaonuo.mobile"))
+                .apis(RequestHandlerSelectors.basePackage("com.amarsoft.mobile"))
                 .paths(PathSelectors.any())
                 .build().extensions(openApiExtensionResolver.buildExtensions("移动端功能MOBILE"));
     }

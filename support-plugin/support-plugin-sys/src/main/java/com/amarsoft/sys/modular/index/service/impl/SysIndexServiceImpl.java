@@ -20,8 +20,8 @@ import com.amarsoft.common.sse.CommonSseParam;
 import com.amarsoft.dev.api.DevLogApi;
 import com.amarsoft.dev.api.DevMessageApi;
 import com.amarsoft.dev.api.DevSseApi;
-import vip.xiaonuo.sys.modular.index.param.*;
-import vip.xiaonuo.sys.modular.index.result.*;
+import com.amarsoft.sys.modular.index.param.*;
+import com.amarsoft.sys.modular.index.result.*;
 
 import javax.annotation.Resource;
 import java.util.List;

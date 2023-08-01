@@ -34,7 +34,7 @@ import com.amarsoft.sys.modular.resource.entity.SysModule;
 import com.amarsoft.sys.modular.resource.enums.SysResourceCategoryEnum;
 import com.amarsoft.sys.modular.resource.enums.SysResourceMenuTypeEnum;
 import com.amarsoft.sys.modular.resource.mapper.SysMenuMapper;
-import vip.xiaonuo.sys.modular.resource.param.menu.*;
+import com.amarsoft.sys.modular.resource.param.menu.*;
 
 import javax.annotation.Resource;
 import java.util.List;

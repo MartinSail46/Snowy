@@ -49,7 +49,7 @@ public class GenConfigure {
                 .groupName("代码生成GEN")
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .apis(RequestHandlerSelectors.basePackage("vip.xiaonuo.gen"))
+                .apis(RequestHandlerSelectors.basePackage("com.amarsoft.gen"))
                 .paths(PathSelectors.any())
                 .build().extensions(openApiExtensionResolver.buildExtensions("代码生成GEN"));
     }

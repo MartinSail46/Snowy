@@ -1,4 +1,4 @@
-package vip.xiaonuo;
+package com.amarsoft;
 
 /**
  * TestMain方法

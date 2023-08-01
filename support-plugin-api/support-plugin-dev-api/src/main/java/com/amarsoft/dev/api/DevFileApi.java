@@ -3,7 +3,7 @@ package com.amarsoft.dev.api;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * 文件API接口，可参考vip.xiaonuo.dev.core.util.file包下的工具类扩展更多需要的方法
+ * 文件API接口，可参考com.amarsoft.dev.core.util.file包下的工具类扩展更多需要的方法
  *
  * @author xuyuxiang
  * @date 2022/6/22 15:21

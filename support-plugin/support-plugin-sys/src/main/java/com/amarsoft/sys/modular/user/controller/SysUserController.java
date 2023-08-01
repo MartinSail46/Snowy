@@ -20,7 +20,7 @@ import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.sys.modular.org.entity.SysOrg;
 import com.amarsoft.sys.modular.role.entity.SysRole;
 import com.amarsoft.sys.modular.user.entity.SysUser;
-import vip.xiaonuo.sys.modular.user.param.*;
+import com.amarsoft.sys.modular.user.param.*;
 import com.amarsoft.sys.modular.user.result.SysUserOwnPermissionResult;
 import com.amarsoft.sys.modular.user.result.SysUserOwnResourceResult;
 import com.amarsoft.sys.modular.user.service.SysUserService;

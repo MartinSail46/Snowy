@@ -6,7 +6,7 @@ import com.amarsoft.mobile.modular.resource.param.menu.*;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.amarsoft.mobile.modular.resource.entity.MobileMenu;
 import com.amarsoft.mobile.modular.resource.entity.MobileModule;
-import vip.xiaonuo.mobile.modular.resource.param.menu.*;
+import com.amarsoft.mobile.modular.resource.param.menu.*;
 
 import java.util.List;
 

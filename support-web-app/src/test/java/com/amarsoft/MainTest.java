@@ -1,4 +1,4 @@
-package vip.xiaonuo;
+package com.amarsoft;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

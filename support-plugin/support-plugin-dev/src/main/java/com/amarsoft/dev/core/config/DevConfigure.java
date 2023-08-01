@@ -48,7 +48,7 @@ public class DevConfigure {
                 .groupName("开发工具DEV")
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .apis(RequestHandlerSelectors.basePackage("vip.xiaonuo.dev"))
+                .apis(RequestHandlerSelectors.basePackage("com.amarsoft.dev"))
                 .paths(PathSelectors.any())
                 .build().extensions(openApiExtensionResolver.buildExtensions("开发工具DEV"));
     }

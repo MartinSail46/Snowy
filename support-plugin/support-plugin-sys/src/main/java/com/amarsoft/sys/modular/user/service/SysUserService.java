@@ -11,8 +11,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.amarsoft.sys.modular.org.entity.SysOrg;
 import com.amarsoft.sys.modular.role.entity.SysRole;
 import com.amarsoft.sys.modular.user.entity.SysUser;
-import vip.xiaonuo.sys.modular.user.param.*;
-import vip.xiaonuo.sys.modular.user.result.*;
+import com.amarsoft.sys.modular.user.param.*;
+import com.amarsoft.sys.modular.user.result.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

@@ -49,7 +49,7 @@ public class ClientConfigure {
                 .groupName("C端功能CLIENT")
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .apis(RequestHandlerSelectors.basePackage("vip.xiaonuo.client"))
+                .apis(RequestHandlerSelectors.basePackage("com.amarsoft.client"))
                 .paths(PathSelectors.any())
                 .build().extensions(openApiExtensionResolver.buildExtensions("C端功能CLIENT"));
     }

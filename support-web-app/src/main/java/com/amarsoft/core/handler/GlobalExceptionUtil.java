@@ -1,4 +1,4 @@
-package vip.xiaonuo.core.handler;
+package com.amarsoft.core.handler;
 
 import cn.dev33.satoken.exception.SaTokenException;
 import cn.hutool.core.util.ObjectUtil;

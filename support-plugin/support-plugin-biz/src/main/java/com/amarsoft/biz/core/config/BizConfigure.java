@@ -48,7 +48,7 @@ public class BizConfigure {
                 .groupName("业务功能BIZ")
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .apis(RequestHandlerSelectors.basePackage("vip.xiaonuo.biz"))
+                .apis(RequestHandlerSelectors.basePackage("com.amarsoft.biz"))
                 .paths(PathSelectors.any())
                 .build().extensions(openApiExtensionResolver.buildExtensions("业务功能BIZ"));
     }

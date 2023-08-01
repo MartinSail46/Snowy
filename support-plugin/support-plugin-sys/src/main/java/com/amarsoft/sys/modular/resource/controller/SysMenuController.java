@@ -17,7 +17,7 @@ import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.sys.modular.resource.entity.SysMenu;
 import com.amarsoft.sys.modular.resource.entity.SysModule;
-import vip.xiaonuo.sys.modular.resource.param.menu.*;
+import com.amarsoft.sys.modular.resource.param.menu.*;
 import com.amarsoft.sys.modular.resource.service.SysMenuService;
 
 import javax.annotation.Resource;

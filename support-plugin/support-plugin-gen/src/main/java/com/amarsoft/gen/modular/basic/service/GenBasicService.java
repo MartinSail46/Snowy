@@ -7,7 +7,7 @@ import com.amarsoft.gen.modular.basic.result.GenBasicTableResult;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.amarsoft.gen.modular.basic.entity.GenBasic;
-import vip.xiaonuo.gen.modular.basic.param.*;
+import com.amarsoft.gen.modular.basic.param.*;
 import com.amarsoft.gen.modular.basic.result.GenBasicPreviewResult;
 
 import javax.servlet.http.HttpServletResponse;

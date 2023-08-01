@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.amarsoft.biz.modular.org.entity.BizOrg;
-import vip.xiaonuo.biz.modular.org.param.*;
+import com.amarsoft.biz.modular.org.param.*;
 import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;

@@ -19,8 +19,8 @@ import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.sys.modular.role.entity.SysRole;
-import vip.xiaonuo.sys.modular.role.param.*;
-import vip.xiaonuo.sys.modular.role.result.*;
+import com.amarsoft.sys.modular.role.param.*;
+import com.amarsoft.sys.modular.role.result.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;

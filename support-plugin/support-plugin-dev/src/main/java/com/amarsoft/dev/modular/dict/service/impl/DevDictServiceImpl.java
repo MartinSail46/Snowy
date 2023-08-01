@@ -22,7 +22,7 @@ import com.amarsoft.common.page.CommonPageRequest;
 import com.amarsoft.dev.modular.dict.entity.DevDict;
 import com.amarsoft.dev.modular.dict.enums.DevDictCategoryEnum;
 import com.amarsoft.dev.modular.dict.mapper.DevDictMapper;
-import vip.xiaonuo.dev.modular.dict.param.*;
+import com.amarsoft.dev.modular.dict.param.*;
 import com.amarsoft.dev.modular.dict.service.DevDictService;
 
 import javax.annotation.Resource;

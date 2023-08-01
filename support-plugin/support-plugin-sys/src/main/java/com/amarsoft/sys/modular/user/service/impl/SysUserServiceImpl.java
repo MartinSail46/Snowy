@@ -87,8 +87,8 @@ import com.amarsoft.sys.modular.role.service.SysRoleService;
 import com.amarsoft.sys.modular.user.entity.SysUser;
 import com.amarsoft.sys.modular.user.enums.SysUserStatusEnum;
 import com.amarsoft.sys.modular.user.mapper.SysUserMapper;
-import vip.xiaonuo.sys.modular.user.param.*;
-import vip.xiaonuo.sys.modular.user.result.*;
+import com.amarsoft.sys.modular.user.param.*;
+import com.amarsoft.sys.modular.user.result.*;
 import com.amarsoft.sys.modular.user.service.SysUserService;
 
 import javax.annotation.Resource;

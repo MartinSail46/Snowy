@@ -16,7 +16,7 @@ import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.gen.modular.basic.entity.GenBasic;
-import vip.xiaonuo.gen.modular.basic.param.*;
+import com.amarsoft.gen.modular.basic.param.*;
 import com.amarsoft.gen.modular.basic.result.GenBasicMobileModuleSelectorResult;
 import com.amarsoft.gen.modular.basic.result.GenBasicPreviewResult;
 import com.amarsoft.gen.modular.basic.result.GenBasicTableColumnResult;

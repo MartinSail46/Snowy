@@ -48,7 +48,7 @@ public class SysConfigure {
                 .groupName("系统功能SYS")
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .apis(RequestHandlerSelectors.basePackage("vip.xiaonuo.sys"))
+                .apis(RequestHandlerSelectors.basePackage("com.amarsoft.sys"))
                 .paths(PathSelectors.any())
                 .build().extensions(openApiExtensionResolver.buildExtensions("系统功能SYS"));
     }

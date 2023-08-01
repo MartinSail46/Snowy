@@ -23,7 +23,7 @@ import com.amarsoft.mobile.modular.resource.entity.MobileMenu;
 import com.amarsoft.mobile.modular.resource.entity.MobileModule;
 import com.amarsoft.mobile.modular.resource.enums.MobileResourceCategoryEnum;
 import com.amarsoft.mobile.modular.resource.mapper.MobileMenuMapper;
-import vip.xiaonuo.mobile.modular.resource.param.menu.*;
+import com.amarsoft.mobile.modular.resource.param.menu.*;
 import com.amarsoft.sys.api.SysRelationApi;
 
 import javax.annotation.Resource;

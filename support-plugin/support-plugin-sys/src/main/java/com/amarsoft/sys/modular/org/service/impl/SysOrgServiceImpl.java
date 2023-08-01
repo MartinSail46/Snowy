@@ -33,7 +33,7 @@ import com.amarsoft.sys.core.enums.SysDataTypeEnum;
 import com.amarsoft.sys.modular.org.entity.SysOrg;
 import com.amarsoft.sys.modular.org.enums.SysOrgCategoryEnum;
 import com.amarsoft.sys.modular.org.mapper.SysOrgMapper;
-import vip.xiaonuo.sys.modular.org.param.*;
+import com.amarsoft.sys.modular.org.param.*;
 import com.amarsoft.sys.modular.org.service.SysOrgService;
 
 import javax.annotation.Resource;

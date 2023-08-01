@@ -16,8 +16,8 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
-import vip.xiaonuo.sys.modular.index.param.*;
-import vip.xiaonuo.sys.modular.index.result.*;
+import com.amarsoft.sys.modular.index.param.*;
+import com.amarsoft.sys.modular.index.result.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;

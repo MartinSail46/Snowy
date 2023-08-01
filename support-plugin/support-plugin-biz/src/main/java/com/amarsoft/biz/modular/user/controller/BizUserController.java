@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.amarsoft.biz.modular.org.entity.BizOrg;
 import com.amarsoft.biz.modular.user.entity.BizUser;
-import vip.xiaonuo.biz.modular.user.param.*;
+import com.amarsoft.biz.modular.user.param.*;
 import com.amarsoft.biz.modular.user.result.BizUserRoleResult;
 import com.amarsoft.biz.modular.user.service.BizUserService;
 import com.amarsoft.common.annotation.CommonLog;

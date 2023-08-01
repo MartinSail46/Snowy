@@ -4,7 +4,7 @@ import com.amarsoft.dev.modular.job.param.*;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.amarsoft.dev.modular.job.entity.DevJob;
-import vip.xiaonuo.dev.modular.job.param.*;
+import com.amarsoft.dev.modular.job.param.*;
 
 import java.util.List;
 

@@ -5,7 +5,7 @@ import com.amarsoft.dev.modular.dict.entity.DevDict;
 import com.amarsoft.dev.modular.dict.param.*;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import vip.xiaonuo.dev.modular.dict.param.*;
+import com.amarsoft.dev.modular.dict.param.*;
 
 import java.util.List;
 

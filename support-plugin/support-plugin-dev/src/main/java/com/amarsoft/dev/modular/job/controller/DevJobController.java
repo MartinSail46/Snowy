@@ -16,7 +16,7 @@ import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.dev.modular.job.entity.DevJob;
-import vip.xiaonuo.dev.modular.job.param.*;
+import com.amarsoft.dev.modular.job.param.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;

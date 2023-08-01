@@ -7,8 +7,8 @@ import com.amarsoft.sys.modular.user.entity.SysUser;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.amarsoft.sys.modular.role.entity.SysRole;
-import vip.xiaonuo.sys.modular.role.param.*;
-import vip.xiaonuo.sys.modular.role.result.*;
+import com.amarsoft.sys.modular.role.param.*;
+import com.amarsoft.sys.modular.role.result.*;
 
 import java.util.List;
 

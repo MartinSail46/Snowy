@@ -16,7 +16,7 @@ import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.dev.modular.dict.entity.DevDict;
-import vip.xiaonuo.dev.modular.dict.param.*;
+import com.amarsoft.dev.modular.dict.param.*;
 import com.amarsoft.dev.modular.dict.service.DevDictService;
 
 import javax.annotation.Resource;

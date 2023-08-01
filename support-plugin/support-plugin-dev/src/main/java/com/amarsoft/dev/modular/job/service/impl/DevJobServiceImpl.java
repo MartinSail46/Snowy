@@ -26,7 +26,7 @@ import com.amarsoft.dev.modular.job.entity.DevJob;
 import com.amarsoft.dev.modular.job.enums.DevJobCategoryEnum;
 import com.amarsoft.dev.modular.job.enums.DevJobStatusEnum;
 import com.amarsoft.dev.modular.job.mapper.DevJobMapper;
-import vip.xiaonuo.dev.modular.job.param.*;
+import com.amarsoft.dev.modular.job.param.*;
 
 import java.util.Collection;
 import java.util.List;

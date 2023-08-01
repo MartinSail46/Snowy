@@ -27,7 +27,7 @@ import com.amarsoft.biz.core.enums.BizDataTypeEnum;
 import com.amarsoft.biz.modular.org.entity.BizOrg;
 import com.amarsoft.biz.modular.org.enums.BizOrgCategoryEnum;
 import com.amarsoft.biz.modular.org.mapper.BizOrgMapper;
-import vip.xiaonuo.biz.modular.org.param.*;
+import com.amarsoft.biz.modular.org.param.*;
 import com.amarsoft.biz.modular.position.service.BizPositionService;
 import com.amarsoft.common.cache.CommonCacheOperator;
 import com.amarsoft.common.enums.CommonSortOrderEnum;

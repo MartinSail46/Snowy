@@ -17,7 +17,7 @@ import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.dev.modular.config.entity.DevConfig;
 import com.amarsoft.dev.modular.config.enums.DevConfigCategoryEnum;
-import vip.xiaonuo.dev.modular.config.param.*;
+import com.amarsoft.dev.modular.config.param.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;

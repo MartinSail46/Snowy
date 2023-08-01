@@ -17,7 +17,7 @@ import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.sys.modular.position.entity.SysPosition;
-import vip.xiaonuo.sys.modular.position.param.*;
+import com.amarsoft.sys.modular.position.param.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;

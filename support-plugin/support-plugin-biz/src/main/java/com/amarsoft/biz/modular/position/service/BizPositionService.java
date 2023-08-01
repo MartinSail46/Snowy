@@ -5,7 +5,7 @@ import com.amarsoft.biz.modular.position.entity.BizPosition;
 import com.amarsoft.biz.modular.position.param.*;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import vip.xiaonuo.biz.modular.position.param.*;
+import com.amarsoft.biz.modular.position.param.*;
 
 import java.util.List;
 

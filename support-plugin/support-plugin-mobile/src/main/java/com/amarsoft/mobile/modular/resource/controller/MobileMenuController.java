@@ -16,7 +16,7 @@ import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.mobile.modular.resource.entity.MobileMenu;
 import com.amarsoft.mobile.modular.resource.entity.MobileModule;
-import vip.xiaonuo.mobile.modular.resource.param.menu.*;
+import com.amarsoft.mobile.modular.resource.param.menu.*;
 import com.amarsoft.mobile.modular.resource.service.MobileMenuService;
 
 import javax.annotation.Resource;

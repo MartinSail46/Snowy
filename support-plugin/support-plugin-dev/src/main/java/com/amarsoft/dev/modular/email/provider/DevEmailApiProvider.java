@@ -5,7 +5,7 @@ import com.amarsoft.dev.modular.email.param.*;
 import com.amarsoft.dev.modular.email.service.DevEmailService;
 import org.springframework.stereotype.Service;
 import com.amarsoft.dev.api.DevEmailApi;
-import vip.xiaonuo.dev.modular.email.param.*;
+import com.amarsoft.dev.modular.email.param.*;
 
 import javax.annotation.Resource;
 import java.io.File;

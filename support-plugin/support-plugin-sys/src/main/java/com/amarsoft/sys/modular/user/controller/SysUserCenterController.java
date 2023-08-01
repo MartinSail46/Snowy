@@ -18,7 +18,7 @@ import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.sys.modular.org.entity.SysOrg;
 import com.amarsoft.sys.modular.role.entity.SysRole;
 import com.amarsoft.sys.modular.user.entity.SysUser;
-import vip.xiaonuo.sys.modular.user.param.*;
+import com.amarsoft.sys.modular.user.param.*;
 import com.amarsoft.sys.modular.user.result.SysUserMessageDetailResult;
 import com.amarsoft.sys.modular.user.result.SysUserMessageResult;
 import com.amarsoft.sys.modular.user.result.SysUserPicValidCodeResult;

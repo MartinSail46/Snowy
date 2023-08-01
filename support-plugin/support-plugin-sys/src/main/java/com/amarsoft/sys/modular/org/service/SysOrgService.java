@@ -6,7 +6,7 @@ import com.amarsoft.sys.modular.org.param.*;
 import com.amarsoft.sys.modular.user.entity.SysUser;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import vip.xiaonuo.sys.modular.org.param.*;
+import com.amarsoft.sys.modular.org.param.*;
 
 import java.util.List;
 

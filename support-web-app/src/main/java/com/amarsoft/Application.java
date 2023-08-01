@@ -1,4 +1,4 @@
-package vip.xiaonuo;
+package com.amarsoft;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.Banner;

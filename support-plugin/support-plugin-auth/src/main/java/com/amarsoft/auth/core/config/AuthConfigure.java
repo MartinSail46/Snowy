@@ -130,7 +130,7 @@ public class AuthConfigure implements WebMvcConfigurer {
                 .groupName("登录鉴权AUTH")
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .apis(RequestHandlerSelectors.basePackage("vip.xiaonuo.auth"))
+                .apis(RequestHandlerSelectors.basePackage("com.amarsoft.auth"))
                 .paths(PathSelectors.any())
                 .build().extensions(openApiExtensionResolver.buildExtensions("登录鉴权AUTH"));
     }

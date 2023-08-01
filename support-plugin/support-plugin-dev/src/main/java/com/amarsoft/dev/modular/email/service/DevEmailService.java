@@ -4,7 +4,7 @@ import com.amarsoft.dev.modular.email.entity.DevEmail;
 import com.amarsoft.dev.modular.email.param.*;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import vip.xiaonuo.dev.modular.email.param.*;
+import com.amarsoft.dev.modular.email.param.*;
 
 import java.util.List;
 

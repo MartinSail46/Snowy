@@ -15,7 +15,7 @@ import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.dev.modular.email.entity.DevEmail;
-import vip.xiaonuo.dev.modular.email.param.*;
+import com.amarsoft.dev.modular.email.param.*;
 import com.amarsoft.dev.modular.email.service.DevEmailService;
 
 import javax.annotation.Resource;

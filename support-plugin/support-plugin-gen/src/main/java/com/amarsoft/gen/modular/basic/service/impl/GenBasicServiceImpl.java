@@ -45,7 +45,7 @@ import com.amarsoft.common.util.CommonDownloadUtil;
 import com.amarsoft.common.util.CommonResponseUtil;
 import com.amarsoft.gen.modular.basic.entity.GenBasic;
 import com.amarsoft.gen.modular.basic.mapper.GenBasicMapper;
-import vip.xiaonuo.gen.modular.basic.param.*;
+import com.amarsoft.gen.modular.basic.param.*;
 import com.amarsoft.mobile.api.MobileModuleApi;
 import com.amarsoft.sys.api.SysButtonApi;
 import com.amarsoft.sys.api.SysMenuApi;

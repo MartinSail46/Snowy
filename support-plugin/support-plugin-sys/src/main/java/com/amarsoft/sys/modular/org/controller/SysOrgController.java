@@ -17,7 +17,7 @@ import com.amarsoft.common.annotation.CommonLog;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonValidList;
 import com.amarsoft.sys.modular.org.entity.SysOrg;
-import vip.xiaonuo.sys.modular.org.param.*;
+import com.amarsoft.sys.modular.org.param.*;
 import com.amarsoft.sys.modular.org.service.SysOrgService;
 
 import javax.annotation.Resource;

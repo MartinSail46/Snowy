@@ -48,8 +48,8 @@ import com.amarsoft.sys.modular.org.service.SysOrgService;
 import com.amarsoft.sys.modular.role.entity.SysRole;
 import com.amarsoft.sys.modular.role.enums.SysRoleCategoryEnum;
 import com.amarsoft.sys.modular.role.mapper.SysRoleMapper;
-import vip.xiaonuo.sys.modular.role.param.*;
-import vip.xiaonuo.sys.modular.role.result.*;
+import com.amarsoft.sys.modular.role.param.*;
+import com.amarsoft.sys.modular.role.result.*;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;

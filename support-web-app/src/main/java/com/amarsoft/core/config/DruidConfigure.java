@@ -1,4 +1,4 @@
-package vip.xiaonuo.core.config;
+package com.amarsoft.core.config;
 
 import com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties;
 import com.alibaba.druid.util.Utils;

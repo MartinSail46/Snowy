@@ -1,4 +1,4 @@
-package vip.xiaonuo.core.config;
+package com.amarsoft.core.config;
 
 import cn.dev33.satoken.context.SaHolder;
 import cn.dev33.satoken.context.model.SaResponse;
@@ -55,7 +55,7 @@ import com.amarsoft.common.listener.CommonDataChangeListener;
 import com.amarsoft.common.pojo.CommonResult;
 import com.amarsoft.common.pojo.CommonWrapperInterface;
 import com.amarsoft.common.util.CommonTimeFormatUtil;
-import vip.xiaonuo.core.handler.GlobalExceptionUtil;
+import com.amarsoft.core.handler.GlobalExceptionUtil;
 import com.amarsoft.sys.core.enums.SysBuildInEnum;
 
 import javax.annotation.Resource;
@@ -75,7 +75,7 @@ import java.util.*;
  * @date 2021/10/9 14:24
  **/
 @Configuration
-@MapperScan(basePackages = {"vip.xiaonuo.**.mapper"})
+@MapperScan(basePackages = {"com.amarsoft.**.mapper"})
 public class GlobalConfigure implements WebMvcConfigurer {
 
     private static final String COMMON_REPEAT_SUBMIT_CACHE_KEY = "common-repeatSubmit:";

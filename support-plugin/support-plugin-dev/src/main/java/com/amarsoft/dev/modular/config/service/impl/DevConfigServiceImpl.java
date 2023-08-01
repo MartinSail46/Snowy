@@ -23,7 +23,7 @@ import com.amarsoft.common.exception.CommonException;
 import com.amarsoft.common.page.CommonPageRequest;
 import com.amarsoft.dev.modular.config.entity.DevConfig;
 import com.amarsoft.dev.modular.config.enums.DevConfigCategoryEnum;
-import vip.xiaonuo.dev.modular.config.param.*;
+import com.amarsoft.dev.modular.config.param.*;
 
 import javax.annotation.Resource;
 import java.util.List;

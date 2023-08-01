@@ -1,4 +1,4 @@
-package vip.xiaonuo.core.handler;
+package com.amarsoft.core.handler;
 
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.json.JSONObject;

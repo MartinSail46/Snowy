@@ -20,7 +20,7 @@ import com.amarsoft.common.exception.CommonException;
 import com.amarsoft.common.page.CommonPageRequest;
 import com.amarsoft.common.util.CommonEmailUtil;
 import com.amarsoft.dev.modular.email.enums.DevEmailEngineTypeEnum;
-import vip.xiaonuo.dev.modular.email.param.*;
+import com.amarsoft.dev.modular.email.param.*;
 import com.amarsoft.dev.modular.email.util.DevEmailAliyunUtil;
 import com.amarsoft.dev.modular.email.util.DevEmailLocalUtil;
 import com.amarsoft.dev.modular.email.util.DevEmailTencentUtil;
