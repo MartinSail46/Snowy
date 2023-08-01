@@ -3,7 +3,7 @@ package vip.xiaonuo.core.handler;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import vip.xiaonuo.common.pojo.CommonResult;
+import com.amarsoft.common.pojo.CommonResult;
 
 /**
  * 全局异常处理器

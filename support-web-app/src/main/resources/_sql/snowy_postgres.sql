@@ -1830,7 +1830,7 @@ INSERT INTO DEV_DICT VALUES ('1567580487684206594', '1567580351742619650', '业�
 -- ----------------------------
 -- Records of DEV_JOB
 -- ----------------------------
-INSERT INTO DEV_JOB VALUES ('1555471535453827073', '定时任务', 'qi06nah38m', 'FRM', 'vip.xiaonuo.dev.modular.job.task.DevJobTimerTaskRunner', '0 0 0 1 * ?', 'STOPPED', 1, NULL, 'NOT_DELETE', '2022-08-05 16:31:29', '-1', NULL, NULL);
+INSERT INTO DEV_JOB VALUES ('1555471535453827073', '定时任务', 'qi06nah38m', 'FRM', 'task.job.modular.com.amarsoft.dev.DevJobTimerTaskRunner', '0 0 0 1 * ?', 'STOPPED', 1, NULL, 'NOT_DELETE', '2022-08-05 16:31:29', '-1', NULL, NULL);
 
 -- ----------------------------
 -- Records of SYS_ORG

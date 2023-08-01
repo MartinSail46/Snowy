@@ -18,10 +18,10 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.multipart.MultipartException;
 import org.springframework.web.multipart.support.MissingServletRequestPartException;
-import vip.xiaonuo.auth.core.util.AuthExceptionUtil;
-import vip.xiaonuo.common.exception.CommonException;
-import vip.xiaonuo.common.pojo.CommonResult;
-import vip.xiaonuo.common.util.CommonServletUtil;
+import com.amarsoft.auth.core.util.AuthExceptionUtil;
+import com.amarsoft.common.exception.CommonException;
+import com.amarsoft.common.pojo.CommonResult;
+import com.amarsoft.common.util.CommonServletUtil;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;

@@ -6,8 +6,8 @@ import cn.hutool.json.JSONUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import vip.xiaonuo.common.exception.CommonException;
-import vip.xiaonuo.common.pojo.CommonResult;
+import com.amarsoft.common.exception.CommonException;
+import com.amarsoft.common.pojo.CommonResult;
 
 import javax.servlet.http.HttpServletRequest;
 

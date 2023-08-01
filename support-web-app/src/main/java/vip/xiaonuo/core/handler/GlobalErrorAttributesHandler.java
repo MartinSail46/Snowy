@@ -8,9 +8,9 @@ import org.springframework.boot.web.error.ErrorAttributeOptions;
 import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.WebRequest;
-import vip.xiaonuo.common.exception.CommonException;
-import vip.xiaonuo.common.pojo.CommonResult;
-import vip.xiaonuo.common.util.CommonServletUtil;
+import com.amarsoft.common.exception.CommonException;
+import com.amarsoft.common.pojo.CommonResult;
+import com.amarsoft.common.util.CommonServletUtil;
 
 import java.util.Map;
 

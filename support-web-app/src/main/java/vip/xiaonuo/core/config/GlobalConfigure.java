@@ -44,19 +44,19 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import vip.xiaonuo.auth.core.util.StpClientUtil;
-import vip.xiaonuo.common.annotation.CommonNoRepeat;
-import vip.xiaonuo.common.annotation.CommonWrapper;
-import vip.xiaonuo.common.cache.CommonCacheOperator;
-import vip.xiaonuo.common.enums.CommonDeleteFlagEnum;
-import vip.xiaonuo.common.exception.CommonException;
-import vip.xiaonuo.common.listener.CommonDataChangeEventCenter;
-import vip.xiaonuo.common.listener.CommonDataChangeListener;
-import vip.xiaonuo.common.pojo.CommonResult;
-import vip.xiaonuo.common.pojo.CommonWrapperInterface;
-import vip.xiaonuo.common.util.CommonTimeFormatUtil;
+import com.amarsoft.auth.core.util.StpClientUtil;
+import com.amarsoft.common.annotation.CommonNoRepeat;
+import com.amarsoft.common.annotation.CommonWrapper;
+import com.amarsoft.common.cache.CommonCacheOperator;
+import com.amarsoft.common.enums.CommonDeleteFlagEnum;
+import com.amarsoft.common.exception.CommonException;
+import com.amarsoft.common.listener.CommonDataChangeEventCenter;
+import com.amarsoft.common.listener.CommonDataChangeListener;
+import com.amarsoft.common.pojo.CommonResult;
+import com.amarsoft.common.pojo.CommonWrapperInterface;
+import com.amarsoft.common.util.CommonTimeFormatUtil;
 import vip.xiaonuo.core.handler.GlobalExceptionUtil;
-import vip.xiaonuo.sys.core.enums.SysBuildInEnum;
+import com.amarsoft.sys.core.enums.SysBuildInEnum;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -369,7 +369,7 @@ public class GlobalConfigure implements WebMvcConfigurer {
          * @author xuyuxiang
          * @date 2022/9/15 21:27
          */
-        @Pointcut("@annotation(vip.xiaonuo.common.annotation.CommonWrapper)")
+        @Pointcut("@annotation(com.amarsoft.common.annotation.CommonWrapper)")
         private void wrapperPointcut() {
 
         }
